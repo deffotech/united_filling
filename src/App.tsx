@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/contexts/CartContext";
 import { WishlistProvider } from "@/contexts/WishlistContext";
 import Header from "@/components/Header";
+import Layout from "@/components/Layout";
 import ChangePassword from "@/pages/ChangePassword";
 import TwoFactorAuth from "@/pages/TwoFactorAuth";
 import BookConsultation from "@/pages/BookConsultation";
@@ -131,39 +132,39 @@ function App() {
           <BrowserRouter>
             <Header />
             <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/partner" element={<Partner />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/change-password" element={<ChangePassword />} />
-              <Route path="/two-factor-auth" element={<TwoFactorAuth />} />
-              <Route path="/book-consultation" element={<BookConsultation />} />
-              <Route path="/privacy-settings" element={<PrivacySettings />} />
-              <Route path="/business-registration" element={<BusinessRegistration />} />
+              <Route path="/" element={<Layout showSidebar={false}><Index /></Layout>} />
+              <Route path="/login" element={<Layout showSidebar={false}><Login /></Layout>} />
+              <Route path="/profile" element={<Layout><Profile /></Layout>} />
+              <Route path="/services" element={<Layout><Services /></Layout>} />
+              <Route path="/partner" element={<Layout><Partner /></Layout>} />
+              <Route path="/checkout" element={<Layout><Checkout /></Layout>} />
+              <Route path="/change-password" element={<Layout><ChangePassword /></Layout>} />
+              <Route path="/two-factor-auth" element={<Layout><TwoFactorAuth /></Layout>} />
+              <Route path="/book-consultation" element={<Layout><BookConsultation /></Layout>} />
+              <Route path="/privacy-settings" element={<Layout><PrivacySettings /></Layout>} />
+              <Route path="/business-registration" element={<Layout><BusinessRegistration /></Layout>} />
               
               {/* Business Registration Routes */}
-              <Route path="/proprietorship" element={<Proprietorship />} />
-              <Route path="/partnership" element={<Partnership />} />
-              <Route path="/one-person-company" element={<OnePersonCompany />} />
-              <Route path="/limited-liability-partnership" element={<LLP />} />
-              <Route path="/private-limited-company" element={<PrivateLimitedCompany />} />
-              <Route path="/public-limited-company" element={<PublicLimitedCompany />} />
-              <Route path="/section-8-company" element={<Section8Company />} />
-              <Route path="/trust-registration" element={<TrustRegistration />} />
-              <Route path="/producer-company" element={<ProducerCompany />} />
-              <Route path="/nidhi-company" element={<NidhiCompany />} />
-              <Route path="/indian-subsidiary" element={<IndianSubsidiary />} />
-              <Route path="/startup-india" element={<StartupIndia />} />
-              <Route path="/trade-license" element={<TradeLicense />} />
-              <Route path="/fssai-registration" element={<FSSAIRegistration />} />
-              <Route path="/fssai-license" element={<FSSAiLicense />} />
-              <Route path="/halal-certification" element={<HalalCertification />} />
-              <Route path="/icegate-registration" element={<IcegateRegistration />} />
-              <Route path="/import-export-code" element={<ImportExportCode />} />
+              <Route path="/proprietorship" element={<Layout><Proprietorship /></Layout>} />
+              <Route path="/partnership" element={<Layout><Partnership /></Layout>} />
+              <Route path="/one-person-company" element={<Layout><OnePersonCompany /></Layout>} />
+              <Route path="/limited-liability-partnership" element={<Layout><LLP /></Layout>} />
+              <Route path="/private-limited-company" element={<Layout><PrivateLimitedCompany /></Layout>} />
+              <Route path="/public-limited-company" element={<Layout><PublicLimitedCompany /></Layout>} />
+              <Route path="/section-8-company" element={<Layout><Section8Company /></Layout>} />
+              <Route path="/trust-registration" element={<Layout><TrustRegistration /></Layout>} />
+              <Route path="/producer-company" element={<Layout><ProducerCompany /></Layout>} />
+              <Route path="/nidhi-company" element={<Layout><NidhiCompany /></Layout>} />
+              <Route path="/indian-subsidiary" element={<Layout><IndianSubsidiary /></Layout>} />
+              <Route path="/startup-india" element={<Layout><StartupIndia /></Layout>} />
+              <Route path="/trade-license" element={<Layout><TradeLicense /></Layout>} />
+              <Route path="/fssai-registration" element={<Layout><FSSAIRegistration /></Layout>} />
+              <Route path="/fssai-license" element={<Layout><FSSAiLicense /></Layout>} />
+              <Route path="/halal-certification" element={<Layout><HalalCertification /></Layout>} />
+              <Route path="/icegate-registration" element={<Layout><IcegateRegistration /></Layout>} />
+              <Route path="/import-export-code" element={<Layout><ImportExportCode /></Layout>} />
               {/* <Route path="/society-registration" element={<SocietyRegistration />} /> */}
-               <Route path="/setup-business-uae" element={<div className="min-h-screen bg-gray-50 flex items-center justify-center">
+               <Route path="/setup-business-uae" element={<Layout><div className="min-h-screen bg-gray-50 flex items-center justify-center">
                  <div className="text-center">
                    <h1 className="text-3xl font-bold text-gray-900 mb-4">Setup Business in UAE</h1>
                    <p className="text-gray-600 mb-6">This page is under development. Coming soon!</p>
@@ -171,8 +172,8 @@ function App() {
                      Contact Us for Details
                    </a>
                  </div>
-               </div>} />
-              <Route path="/setup-business-usa" element={<div className="min-h-screen bg-gray-50 flex items-center justify-center">
+               </div></Layout>} />
+              <Route path="/setup-business-usa" element={<Layout><div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
                   <h1 className="text-3xl font-bold text-gray-900 mb-4">Setup Business in USA</h1>
                   <p className="text-gray-600 mb-6">This page is under development. Coming soon!</p>
@@ -180,100 +181,100 @@ function App() {
                     Contact Us for Details
                   </a>
                 </div>
-              </div>} /> 
+              </div></Layout>} />
               
               {/* Trademark Routes */}
-              <Route path="/trademark-registration" element={<TrademarkRegistration />} />
-              <Route path="/copyright-registration" element={<CopyrightRegistration />} />
-              <Route path="/patent-registration" element={<PatentRegistration />} />
+              <Route path="/trademark-registration" element={<Layout><TrademarkRegistration /></Layout>} />
+              <Route path="/copyright-registration" element={<Layout><CopyrightRegistration /></Layout>} />
+              <Route path="/patent-registration" element={<Layout><PatentRegistration /></Layout>} />
               
               {/* GST Routes */}
-              <Route path="/gst-registration" element={<GstRegistration />} />
-              <Route path="/gst-return-filing" element={<GstReturnFiling />} />
-              <Route path="/gst-annual-return-filing-gstr9" element={<GstAnnualReturnFilingGstr9 />} />
-              <Route path="/gst-lut-form" element={<GstLutForm />} />
-              <Route path="/gst-notice" element={<GstNotice />} />
-              <Route path="/gst-registration-for-foreigners" element={<GstRegistrationForForeigners />} />
-              <Route path="/gst-registration-amendment" element={<GstRegistrationAmendment />} />
-              <Route path="/gst-revocation" element={<GstRevocation />} />
-              <Route path="/gst-gstr-10" element={<Gstr10ReturnFiling />} />
+              <Route path="/gst-registration" element={<Layout><GstRegistration /></Layout>} />
+              <Route path="/gst-return-filing" element={<Layout><GstReturnFiling /></Layout>} />
+              <Route path="/gst-annual-return-filing-gstr9" element={<Layout><GstAnnualReturnFilingGstr9 /></Layout>} />
+              <Route path="/gst-lut-form" element={<Layout><GstLutForm /></Layout>} />
+              <Route path="/gst-notice" element={<Layout><GstNotice /></Layout>} />
+              <Route path="/gst-registration-for-foreigners" element={<Layout><GstRegistrationForForeigners /></Layout>} />
+              <Route path="/gst-registration-amendment" element={<Layout><GstRegistrationAmendment /></Layout>} />
+              <Route path="/gst-revocation" element={<Layout><GstRevocation /></Layout>} />
+              <Route path="/gst-gstr-10" element={<Layout><Gstr10ReturnFiling /></Layout>} />
               
               {/* Tax Routes */}
-              <Route path="/income-tax-e-filing-new" element={<IncomeTaxEFilingNew />} />
-              <Route path="/itr-1-return-filing" element={<ITR1ReturnFiling />} />
-              <Route path="/itr-2-return-filing" element={<ITR2ReturnFiling />} />
-              <Route path="/itr-3-return-filing" element={<ITR3ReturnFiling />} />
-              <Route path="/itr-4-return-filing" element={<ITR4ReturnFiling />} />
-              <Route path="/itr-5-return-filing" element={<ITR5ReturnFiling />} />
-              <Route path="/itr-6-return-filing" element={<ITR6ReturnFiling />} />
-              <Route path="/itr-7-return-filing" element={<ITR7ReturnFiling />} />
-              <Route path="/15ca-15cb-filing" element={<Fifteen_CA_15CB_Filing />} />
-              <Route path="/tan-registration" element={<TANRegistration />} />
-              <Route path="/tds-return-filing" element={<TDSReturnFiling />} />
-              <Route path="/income-tax-notice" element={<IncomeTaxNotice />} />
+              <Route path="/income-tax-e-filing-new" element={<Layout><IncomeTaxEFilingNew /></Layout>} />
+              <Route path="/itr-1-return-filing" element={<Layout><ITR1ReturnFiling /></Layout>} />
+              <Route path="/itr-2-return-filing" element={<Layout><ITR2ReturnFiling /></Layout>} />
+              <Route path="/itr-3-return-filing" element={<Layout><ITR3ReturnFiling /></Layout>} />
+              <Route path="/itr-4-return-filing" element={<Layout><ITR4ReturnFiling /></Layout>} />
+              <Route path="/itr-5-return-filing" element={<Layout><ITR5ReturnFiling /></Layout>} />
+              <Route path="/itr-6-return-filing" element={<Layout><ITR6ReturnFiling /></Layout>} />
+              <Route path="/itr-7-return-filing" element={<Layout><ITR7ReturnFiling /></Layout>} />
+              <Route path="/15ca-15cb-filing" element={<Layout><Fifteen_CA_15CB_Filing /></Layout>} />
+              <Route path="/tan-registration" element={<Layout><TANRegistration /></Layout>} />
+              <Route path="/tds-return-filing" element={<Layout><TDSReturnFiling /></Layout>} />
+              <Route path="/income-tax-notice" element={<Layout><IncomeTaxNotice /></Layout>} />
               
               {/* Other service routes continue... */}
-              <Route path="/digital-signature" element={<DigitalSignature />} />
-              <Route path="/pf-registration" element={<PFRegistration />} />
-              <Route path="/esi-registration" element={<ESIRegistration />} />
-              <Route path="/demat-of-shares" element={<DematOfShares />} />
-              <Route path="/winding-up-llp" element={<WindingUpLLP />} />
-              <Route path="/winding-up-company" element={<WindingUpCompany />} />
-              <Route path="/udyam-registration" element={<UdyamRegistration />} />
-              <Route path="/fcra-registration" element={<FCRARegistration />} />
-              <Route path="/company-compliance" element={<CompanyCompliance />} />
-              <Route path="/llp-compliance" element={<LlpCompliance />} />
-              <Route path="/consultation" element={<Consultation />} />
-              <Route path="/talk-to-expert" element={<TalkToExpert />} />
-              <Route path="/about-us" element={<AboutUs />} />
-              <Route path="/guide" element={<Guide />} />
+              <Route path="/digital-signature" element={<Layout><DigitalSignature /></Layout>} />
+              <Route path="/pf-registration" element={<Layout><PFRegistration /></Layout>} />
+              <Route path="/esi-registration" element={<Layout><ESIRegistration /></Layout>} />
+              <Route path="/demat-of-shares" element={<Layout><DematOfShares /></Layout>} />
+              <Route path="/winding-up-llp" element={<Layout><WindingUpLLP /></Layout>} />
+              <Route path="/winding-up-company" element={<Layout><WindingUpCompany /></Layout>} />
+              <Route path="/udyam-registration" element={<Layout><UdyamRegistration /></Layout>} />
+              <Route path="/fcra-registration" element={<Layout><FCRARegistration /></Layout>} />
+              <Route path="/company-compliance" element={<Layout><CompanyCompliance /></Layout>} />
+              <Route path="/llp-compliance" element={<Layout><LlpCompliance /></Layout>} />
+              <Route path="/consultation" element={<Layout><Consultation /></Layout>} />
+              <Route path="/talk-to-expert" element={<Layout><TalkToExpert /></Layout>} />
+              <Route path="/about-us" element={<Layout showSidebar={false}><AboutUs /></Layout>} />
+              <Route path="/guide" element={<Layout><Guide /></Layout>} />
               
               {/* Additional routes */}
-              <Route path="/legal-entity-identifier-code" element={<LegalEntityIdentifierCode />} />
-              <Route path="/iso-registration" element={<ISORegistration />} />
-              <Route path="/professional-tax-registration" element={<ProfessionalTaxRegistration />} />
-              <Route path="/rcmc-registration" element={<RCMCRegistration />} />
-              <Route path="/rera-registration-for-agents" element={<ReraRegistrationForAgents />} />
-              <Route path="/12a-80g-registration" element={<Twelve_A_80G_Registration />} />
-              <Route path="/12a-registration" element={<Twelve_A_Registration />} />
-              <Route path="/80g-registration" element={<EightyG_Registration />} />
-              <Route path="/apeda-registration" element={<ApedaRegistration />} />
-              <Route path="/barcode-registration" element={<BarcodeRegistration />} />
-              <Route path="/bis-registration" element={<BisRegistration />} />
-              <Route path="/certificate-of-incumbency" element={<CertificateOfIncumbency />} />
-              <Route path="/darpan-registration" element={<DarpanRegistration />} />
-              <Route path="/shop-and-establishment-act" element={<ShopAndEstablishmentAct />} />
-              <Route path="/drug-license" element={<DrugLicense />} />
-              <Route path="/fire-license" element={<FireLicense />} />
+              <Route path="/legal-entity-identifier-code" element={<Layout><LegalEntityIdentifierCode /></Layout>} />
+              <Route path="/iso-registration" element={<Layout><ISORegistration /></Layout>} />
+              <Route path="/professional-tax-registration" element={<Layout><ProfessionalTaxRegistration /></Layout>} />
+              <Route path="/rcmc-registration" element={<Layout><RCMCRegistration /></Layout>} />
+              <Route path="/rera-registration-for-agents" element={<Layout><ReraRegistrationForAgents /></Layout>} />
+              <Route path="/12a-80g-registration" element={<Layout><Twelve_A_80G_Registration /></Layout>} />
+              <Route path="/12a-registration" element={<Layout><Twelve_A_Registration /></Layout>} />
+              <Route path="/80g-registration" element={<Layout><EightyG_Registration /></Layout>} />
+              <Route path="/apeda-registration" element={<Layout><ApedaRegistration /></Layout>} />
+              <Route path="/barcode-registration" element={<Layout><BarcodeRegistration /></Layout>} />
+              <Route path="/bis-registration" element={<Layout><BisRegistration /></Layout>} />
+              <Route path="/certificate-of-incumbency" element={<Layout><CertificateOfIncumbency /></Layout>} />
+              <Route path="/darpan-registration" element={<Layout><DarpanRegistration /></Layout>} />
+              <Route path="/shop-and-establishment-act" element={<Layout><ShopAndEstablishmentAct /></Layout>} />
+              <Route path="/drug-license" element={<Layout><DrugLicense /></Layout>} />
+              <Route path="/fire-license" element={<Layout><FireLicense /></Layout>} />
               
               {/* MCA Routes */}
-              <Route path="/name-change-company" element={<NameChangeCompany />} />
-              <Route path="/registered-office-change-company" element={<RegisteredOfficeChangeCompany />} />
-              <Route path="/din-ekyc-filing" element={<DINEkycFiling />} />
-              <Route path="/din-reactivation" element={<DINReactivation />} />
-              <Route path="/director-change" element={<DirectorChange />} />
+              <Route path="/name-change-company" element={<Layout><NameChangeCompany /></Layout>} />
+              <Route path="/registered-office-change-company" element={<Layout><RegisteredOfficeChangeCompany /></Layout>} />
+              <Route path="/din-ekyc-filing" element={<Layout><DINEkycFiling /></Layout>} />
+              <Route path="/din-reactivation" element={<Layout><DINReactivation /></Layout>} />
+              <Route path="/director-change" element={<Layout><DirectorChange /></Layout>} />
               {/* <Route path="/remove-director" element={<RemoveDirector />} /> */}
               {/* <Route path="/adt1-filing" element={<Adt1Filing />} /> */}
-              <Route path="/dpt3-filing" element={<DPT3Filing />} />
-              <Route path="/llp-form11-filing" element={<LLPForm11Filing />} />
+              <Route path="/dpt3-filing" element={<Layout><DPT3Filing /></Layout>} />
+              <Route path="/llp-form11-filing" element={<Layout><LLPForm11Filing /></Layout>} />
               {/* <Route path="/dormant-status-filing" element={<DormantStatusFiling />} /> */}
-              <Route path="/moa-amendment" element={<MOAAmendment />} />
-              <Route path="/aoa-amendment" element={<AOAAmendment />} />
-              <Route path="/authorized-capital-increase" element={<AuthorizedCapitalIncrease />} />
-              <Route path="/share-transfer" element={<ShareTransfer />} />
+              <Route path="/moa-amendment" element={<Layout><MOAAmendment /></Layout>} />
+              <Route path="/aoa-amendment" element={<Layout><AOAAmendment /></Layout>} />
+              <Route path="/authorized-capital-increase" element={<Layout><AuthorizedCapitalIncrease /></Layout>} />
+              <Route path="/share-transfer" element={<Layout><ShareTransfer /></Layout>} />
               
               {/* Compliance Routes */}
-              <Route path="/fdi-filing-rbi" element={<FDIFilingWithRBI />} />
-              <Route path="/fla-return-filing" element={<FLAReturnFiling />} />
-              <Route path="/fssai-renewal" element={<FSSAIRenewal />} />
-              <Route path="/fssai-return-filing" element={<FSSAIReturnFiling />} />
-              <Route path="/pf-return-filing" element={<PFReturnFiling />} />
-              <Route path="/esi-return-filing" element={<ESIReturnFiling />} />
-              <Route path="/professional-tax-return-filing" element={<ProfessionalTaxReturnFiling />} />
-              <Route path="/partnership-compliance" element={<PartnershipCompliance />} />
-              <Route path="/proprietorship-compliance" element={<ProprietorshipCompliance />} />
-              <Route path="/bookkeeping" element={<Bookkeeping />} />
-              <Route path="/opc-compliance" element={<OpcCompliance />} />
+              <Route path="/fdi-filing-rbi" element={<Layout><FDIFilingWithRBI /></Layout>} />
+              <Route path="/fla-return-filing" element={<Layout><FLAReturnFiling /></Layout>} />
+              <Route path="/fssai-renewal" element={<Layout><FSSAIRenewal /></Layout>} />
+              <Route path="/fssai-return-filing" element={<Layout><FSSAIReturnFiling /></Layout>} />
+              <Route path="/pf-return-filing" element={<Layout><PFReturnFiling /></Layout>} />
+              <Route path="/esi-return-filing" element={<Layout><ESIReturnFiling /></Layout>} />
+              <Route path="/professional-tax-return-filing" element={<Layout><ProfessionalTaxReturnFiling /></Layout>} />
+              <Route path="/partnership-compliance" element={<Layout><PartnershipCompliance /></Layout>} />
+              <Route path="/proprietorship-compliance" element={<Layout><ProprietorshipCompliance /></Layout>} />
+              <Route path="/bookkeeping" element={<Layout><Bookkeeping /></Layout>} />
+              <Route path="/opc-compliance" element={<Layout><OpcCompliance /></Layout>} />
             </Routes>
           </BrowserRouter>
           </WishlistProvider>
