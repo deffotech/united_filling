@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/esi-registration/Breadcrumb';
 import HeroSection from '@/components/esi-registration/HeroSection';
-import OffersSection from '@/components/esi-registration/OffersSection';
 import DetailsSection from '@/components/esi-registration/DetailsSection';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -17,7 +16,7 @@ const ESIRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
+            
             <DetailsSection />
           </div>
         </main>

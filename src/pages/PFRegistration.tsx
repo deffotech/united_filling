@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/pf-registration/Breadcrumb';
 import HeroSection from '@/components/pf-registration/HeroSection';
-import OffersSection from '@/components/pf-registration/OffersSection';
 import DetailsSection from '@/components/pf-registration/DetailsSection';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -16,7 +15,6 @@ const PFRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
           </div>
         </main>

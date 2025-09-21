@@ -8,7 +8,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -56,10 +55,7 @@ const HeroSection = () => {
                     <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />LEDGERS Platform</li>
                     <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />100% Refund Guarantee</li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="Shop Act Registration - Andhra Pradesh"
-                  className="mt-4 w-full"
-                />
+               
                 </CardContent>
             </Card>
             <Card className="border-green-300 border-dashed">
@@ -73,10 +69,7 @@ const HeroSection = () => {
                     <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />LEDGERS Platform</li>
                     <li className="flex items-start"><ChevronRight className="h-4 w-4 mr-1 text-green-500 mt-0.5 shrink-0" />100% Refund Guarantee</li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="Shop Act Registration - Delhi"
-                  className="mt-4 w-full"
-                />
+             
                 </CardContent>
             </Card>
           </div>

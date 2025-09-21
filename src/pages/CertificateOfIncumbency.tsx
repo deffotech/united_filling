@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/certificate-of-incumbency/Breadcrumb';
 import HeroSection from '@/components/certificate-of-incumbency/HeroSection';
-import OffersSection from '@/components/certificate-of-incumbency/OffersSection';
 import DetailsSection from '@/components/certificate-of-incumbency/DetailsSection';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -17,7 +16,6 @@ const CertificateOfIncumbency = () => {
           <Breadcrumb />
           <div className="mt-4 grid gap-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
           </div>
         </main>

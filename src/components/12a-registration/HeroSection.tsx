@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, ChevronRight } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+
 
 const HeroSection = () => {
   return (
@@ -55,10 +55,7 @@ const HeroSection = () => {
                   12A Certificate
                 </li>
               </ul>
-              <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+              
             </CardContent>
           </Card>
 

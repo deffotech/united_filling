@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/80g-registration/Breadcrumb';
 import HeroSection from '@/components/80g-registration/HeroSection';
-import OffersSection from '@/components/80g-registration/OffersSection';
 import DetailsSection from '@/components/80g-registration/DetailsSection';
 import DocumentsSection from '@/components/80g-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const EightyGRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
             <DocumentsSection />
           </div>

@@ -3,7 +3,6 @@ import Breadcrumb from "@/components/share-transfer/Breadcrumb";
 import HeroSection from "@/components/share-transfer/HeroSection";
 import DetailsSection from "@/components/share-transfer/DetailsSection";
 import DocumentsSection from "@/components/share-transfer/DocumentsSection";
-import OffersSection from "@/components/share-transfer/OffersSection";
 
 const ShareTransfer = () => {
   return (
@@ -14,7 +13,6 @@ const ShareTransfer = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

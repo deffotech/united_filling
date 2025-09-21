@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+
 import {
   Select,
   SelectContent,
@@ -86,10 +86,7 @@ const HeroSection = () => {
                 <li>Trademark for one class</li>
                 <li>Trademark Software</li>
               </ul>
-              <SendRequestButton 
-                serviceName="Trademark Filing"
-                className="w-full mt-4"
-              />
+              
             </CardContent>
           </Card>
           <Card className="border-green-500 border-2">
@@ -106,10 +103,7 @@ const HeroSection = () => {
                 <li>Trademark for one class</li>
                 <li>Trademark Software</li>
               </ul>
-              <SendRequestButton 
-                serviceName="Trademark Filing + Form 48"
-                className="w-full mt-4"
-              />
+            
             </CardContent>
           </Card>
         </div>

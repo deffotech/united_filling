@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+
 
 const HeroSection = () => {
   const [showMoreDocs, setShowMoreDocs] = useState(false);
@@ -85,10 +85,7 @@ const HeroSection = () => {
                       Import Export Certificate
                     </li>
                   </ul>
-                  <SendRequestButton 
-                    serviceName="IE Code Registration"
-                    className="w-full mt-2"
-                  />
+                 
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -123,10 +120,7 @@ const HeroSection = () => {
                       Class 3 Encrypted DSC
                     </li>
                   </ul>
-                  <SendRequestButton 
-                    serviceName="IE Code + ICEGATE + DSC"
-                    className="w-full mt-2"
-                  />
+                 
                 </CardContent>
               </Card>
             </div>

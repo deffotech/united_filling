@@ -5,7 +5,6 @@ import Breadcrumb from "@/components/income-tax-notice/Breadcrumb";
 import HeroSection from "@/components/income-tax-notice/HeroSection";
 import DetailsSection from "@/components/income-tax-notice/DetailsSection";
 import DocumentsSection from "@/components/income-tax-notice/DocumentsSection";
-import OffersSection from "@/components/income-tax-notice/OffersSection";
 
 const IncomeTaxNotice = () => {
   return (
@@ -17,7 +16,6 @@ const IncomeTaxNotice = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

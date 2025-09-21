@@ -10,7 +10,6 @@ import {
   Shield,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import Sidebar from "@/components/itr1-return-filing/Sidebar";
 
 const PFReturnFiling = () => {
   return (
@@ -135,7 +134,6 @@ const PFReturnFiling = () => {
             </Card>
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

@@ -6,7 +6,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -62,10 +61,7 @@ const HeroSection = () => {
                   DIN KYC Filing
                 </li>
               </ul>
-              <SendRequestButton 
-                serviceName="DIN KYC"
-                className="mt-6 w-full"
-              />
+             
             </div>
 
             <div className="border rounded-lg p-4 bg-gray-50 relative pt-8">
@@ -83,10 +79,7 @@ const HeroSection = () => {
                   2 Director / Partner
                 </li>
               </ul>
-              <SendRequestButton 
-                serviceName="2 x DIN KYC"
-                className="mt-6 w-full"
-              />
+             
             </div>
           </div>
 

@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/fire-license/Breadcrumb";
 import HeroSection from "@/components/fire-license/HeroSection";
 import DetailsSection from "@/components/fire-license/DetailsSection";
-import Sidebar from "@/components/fire-license/Sidebar";
 import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
 
@@ -20,7 +19,6 @@ const FireLicense = () => {
             <DetailsSection />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

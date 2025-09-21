@@ -11,7 +11,6 @@ import {
   GraduationCap,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import Sidebar from "@/components/itr1-return-filing/Sidebar";
 
 const ITR7ReturnFiling = () => {
   return (
@@ -144,7 +143,6 @@ const ITR7ReturnFiling = () => {
             </Card>
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

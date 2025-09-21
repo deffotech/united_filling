@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/import-export-code/Breadcrumb';
 import HeroSection from '@/components/import-export-code/HeroSection';
-import OffersSection from '@/components/import-export-code/OffersSection';
 import DetailsSection from '@/components/import-export-code/DetailsSection';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -16,7 +15,6 @@ const ImportExportCode = () => {
           <Breadcrumb />
           <div className="mt-4">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
           </div>
         </main>

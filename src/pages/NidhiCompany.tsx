@@ -3,7 +3,7 @@ import Breadcrumb from '@/components/nidhi-company/Breadcrumb';
 import HeroSection from '@/components/nidhi-company/HeroSection';
 import DetailsSection from '@/components/nidhi-company/DetailsSection';
 import DocumentsSection from '@/components/nidhi-company/DocumentsSection';
-import OffersSection from '@/components/nidhi-company/OffersSection';
+import PricingSection from '@/components/nidhi-company/PricingSection';
 
 const NidhiCompany = () => {
   return (
@@ -12,9 +12,10 @@ const NidhiCompany = () => {
         <Breadcrumb />
         <div className="mt-6 space-y-8">
           <HeroSection />
+          <PricingSection/>
           <DetailsSection />
           <DocumentsSection />
-          <OffersSection />
+          
         </div>
       </main>
       <Footer />

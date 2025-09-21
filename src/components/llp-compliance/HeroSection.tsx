@@ -1,5 +1,4 @@
 import { Star, ChevronRight } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -53,10 +52,7 @@ const HeroSection = () => {
                 LEDGERS Platform
               </li>
             </ul>
-            <SendRequestButton 
-              serviceName="LLP Compliance"
-              className="mt-6 w-full"
-            />
+          
           </div>
 
           <div className="flex justify-between items-center mt-4 text-blue-600 border-b pb-4">

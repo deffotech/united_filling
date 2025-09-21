@@ -4,7 +4,6 @@ import Breadcrumb from "@/components/demat-of-shares/Breadcrumb";
 import HeroSection from "@/components/demat-of-shares/HeroSection";
 import DetailsSection from "@/components/demat-of-shares/DetailsSection";
 import DocumentsSection from "@/components/demat-of-shares/DocumentsSection";
-import OffersSection from "@/components/demat-of-shares/OffersSection";
 
 const DematOfShares = () => {
   return (
@@ -16,7 +15,6 @@ const DematOfShares = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

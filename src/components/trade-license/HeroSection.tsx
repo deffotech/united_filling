@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 import {
   Select,
@@ -93,10 +92,7 @@ const HeroSection = () => {
                     Year Trade License
                   </li>
                 </ul>
-                <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+             
               </CardContent>
             </Card>
             <Card className="border-dashed border-green-500">
@@ -126,10 +122,8 @@ const HeroSection = () => {
                     Year Trade License
                   </li>
                 </ul>
-                <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+               className="mt-4 w-full"
+            
               </CardContent>
             </Card>
           </div>

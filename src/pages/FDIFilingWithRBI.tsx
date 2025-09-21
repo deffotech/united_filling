@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/fdi-filing-rbi/Breadcrumb";
 import HeroSection from "@/components/fdi-filing-rbi/HeroSection";
 import DetailsSection from "@/components/fdi-filing-rbi/DetailsSection";
-import Sidebar from "@/components/fdi-filing-rbi/Sidebar";
 
 const FDIFilingWithRBI = () => {
   return (
@@ -18,7 +17,7 @@ const FDIFilingWithRBI = () => {
             <DetailsSection />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
+          
           </div>
         </div>
       </main>

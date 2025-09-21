@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -71,10 +70,7 @@ const HeroSection = () => {
                     PF Number
                   </li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="PF Registration"
-                  className="mt-4 w-full"
-                />
+              
               </CardContent>
             </Card>
 

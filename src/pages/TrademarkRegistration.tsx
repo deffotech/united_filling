@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/trademark-registration/Breadcrumb";
 import HeroSection from "@/components/trademark-registration/HeroSection";
 import DetailsSection from "@/components/trademark-registration/DetailsSection";
-import Sidebar from "@/components/trademark-registration/Sidebar";
 import ComparisonTable from "@/components/trademark-registration/ComparisonTable";
 import DocumentsSection from "@/components/trademark-registration/DocumentsSection";
 import { Button } from "@/components/ui/button";
@@ -23,7 +22,6 @@ const TrademarkRegistration = () => {
             <ComparisonTable />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

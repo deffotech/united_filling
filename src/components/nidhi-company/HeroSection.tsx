@@ -1,6 +1,9 @@
 import { Star, CheckCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
+import { CheckCircle2 } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
@@ -34,41 +37,90 @@ const HeroSection = () => {
           </div>
           <p className="text-sm text-gray-500 mb-4">Register your Nidhi Company for mutual benefit activities.</p>
 
-          <Select defaultValue="basic_package">
-              <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a package" />
-              </SelectTrigger>
-              <SelectContent>
-                  <SelectItem value="basic_package">Basic Package</SelectItem>
-                  <SelectItem value="premium_package">Premium Package</SelectItem>
-              </SelectContent>
-          </Select>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
             <div className="border border-green-200 bg-green-50/50 rounded-lg p-4 flex flex-col justify-between">
-                <div>
-                    <p className="font-semibold text-green-700 text-sm mb-2">3 Exclusive Offers</p>
-                    <h4 className="font-bold mb-2">Basic Package</h4>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                        <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>Name Approval</span></li>
-                        <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>Company Incorporation</span></li>
-                        <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>PAN & TAN Registration</span></li>
-                    </ul>
-                </div>
-                <Button variant="outline" className="border-green-500 text-green-500 mt-4 w-full">ADD</Button>
+                <CardContent className="p-4">
+            <div className="text-xs text-green-600 font-semibold bg-green-100 px-2 py-1 rounded-full inline-block">
+              2 Exclusive Offers
+            </div>
+            <h4 className="font-bold mt-2">Nidhi Company Registration</h4>
+            <ul className="mt-2 space-y-2 text-sm text-gray-600">
+              <li className="flex items-start">
+                <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />
+                Company Name Reservation
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />
+                DIN & DSC for Directors
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />
+                MOA & AOA Drafting
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />
+                Nidhi Company Registration
+              </li>
+            </ul>
+            <div className="flex gap-2 mt-4">
+              <AddToCartButton
+                serviceId="nidhi-company-registration"
+                serviceName="Nidhi Company Registration"
+                price={39999}
+                className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                variant="outline"
+              >
+                ADD TO CART - ₹39,999
+              </AddToCartButton>
+              <AddToWishlistButton
+                serviceId="nidhi-company-registration"
+                serviceName="Nidhi Company Registration"
+                price={39999}
+              />
+            </div>
+          </CardContent>
             </div>
             <div className="border border-yellow-200 bg-yellow-50/50 rounded-lg p-4 flex flex-col justify-between">
-                <div>
-                    <p className="font-semibold text-yellow-700 text-sm mb-2">5 Exclusive Offers</p>
-                    <h4 className="font-bold mb-2">Premium Package</h4>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                        <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>Complete Registration</span></li>
-                        <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>Digital Signature</span></li>
-                        <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>Bank Account Opening</span></li>
-                        <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>Compliance Support</span></li>
-                    </ul>
-                </div>
-                <Button variant="outline" className="border-green-500 text-green-500 mt-4 w-full">ADD</Button>
+                 <CardContent className="p-4">
+            <div className="text-xs text-green-600 font-semibold bg-green-100 px-2 py-1 rounded-full inline-block">
+              2 Exclusive Offers
+            </div>
+            <h4 className="font-bold mt-2">Nidhi Company + GST</h4>
+            <ul className="mt-2 space-y-2 text-sm text-gray-600">
+              <li className="flex items-start">
+                <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />
+                Nidhi Company Registration
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />
+                GST Registration
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />
+                Bank Account Opening Support
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 mt-0.5 shrink-0" />
+                LEDGERS Software - 1 Year License
+              </li>
+            </ul>
+            <div className="flex gap-2 mt-4">
+              <AddToCartButton
+                serviceId="nidhi-company-gst-registration"
+                serviceName="Nidhi Company + GST"
+                price={44999}
+                className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                variant="outline"
+              >
+                ADD TO CART - ₹44,999
+              </AddToCartButton>
+              <AddToWishlistButton
+                serviceId="nidhi-company-gst-registration"
+                serviceName="Nidhi Company + GST"
+                price={44999}
+              />
+            </div>
+          </CardContent>
             </div>
           </div>
           <div className="flex justify-between items-center mt-4 text-sm">

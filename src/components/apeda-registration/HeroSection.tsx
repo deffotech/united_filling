@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -57,10 +56,7 @@ const HeroSection = () => {
                   RCMC Certificate
                 </li>
               </ul>
-              <SendRequestButton 
-                serviceName="APEDA Registration"
-                className="mt-4 w-full"
-              />
+           
             </div>
 
             <div className="flex justify-between mt-6 text-sm">

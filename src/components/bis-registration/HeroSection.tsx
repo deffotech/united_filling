@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -57,10 +56,7 @@ const HeroSection = () => {
                     100% Refund Guarantee
                   </li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="BIS Consultation"
-                  className="mt-4 w-full"
-                />
+              
               </div>
               <div className="border rounded-lg p-4 relative">
                 <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full absolute top-2 right-2">
@@ -85,10 +81,7 @@ const HeroSection = () => {
                     BIS Certification
                   </li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="BIS Certification"
-                  className="mt-4 w-full"
-                />
+               
               </div>
             </div>
             <div className="flex justify-between mt-6 text-sm">

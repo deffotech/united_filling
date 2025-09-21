@@ -4,7 +4,6 @@ import Breadcrumb from "@/components/fcra-registration/Breadcrumb";
 import HeroSection from "@/components/fcra-registration/HeroSection";
 import DetailsSection from "@/components/fcra-registration/DetailsSection";
 import DocumentsSection from "@/components/fcra-registration/DocumentsSection";
-import OffersSection from "@/components/fcra-registration/OffersSection";
 
 const FCRARegistration = () => {
   return (
@@ -16,7 +15,6 @@ const FCRARegistration = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

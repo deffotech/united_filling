@@ -3,7 +3,6 @@ import Footer from '@/components/Footer';
 
 import Breadcrumb from '@/components/professional-tax-registration/Breadcrumb';
 import HeroSection from '@/components/professional-tax-registration/HeroSection';
-import OffersSection from '@/components/professional-tax-registration/OffersSection';
 import DetailsSection from '@/components/professional-tax-registration/DetailsSection';
 import DocumentsSection from '@/components/professional-tax-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const ProfessionalTaxRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
             <DocumentsSection />
           </div>

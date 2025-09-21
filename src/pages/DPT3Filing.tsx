@@ -4,7 +4,6 @@ import Breadcrumb from '@/components/dpt3-filing/Breadcrumb';
 import HeroSection from '@/components/dpt3-filing/HeroSection';
 import DetailsSection from '@/components/dpt3-filing/DetailsSection';
 import DocumentsSection from '@/components/dpt3-filing/DocumentsSection';
-import OffersSection from '@/components/dpt3-filing/OffersSection';
 
 const DPT3Filing = () => {
   return (
@@ -15,7 +14,6 @@ const DPT3Filing = () => {
           <HeroSection />
           <DetailsSection />
           <DocumentsSection />
-          <OffersSection />
         </div>
       </main>
       <Footer />

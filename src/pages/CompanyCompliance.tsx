@@ -4,9 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/company-compliance/Breadcrumb";
 import DetailsSection from "@/components/company-compliance/DetailsSection";
 import HeroSection from "@/components/company-compliance/HeroSection";
-import OffersDiscountSection from "@/components/company-compliance/OffersDiscountSection";
 import PricingSection from "@/components/company-compliance/PricingSection";
-import Sidebar from "@/components/company-compliance/Sidebar";
 
 const CompanyCompliance = () => {
   return (
@@ -18,11 +16,9 @@ const CompanyCompliance = () => {
           <div className="lg:col-span-2 space-y-8">
             <HeroSection />
             <PricingSection />
-            <OffersDiscountSection />
             <DetailsSection />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

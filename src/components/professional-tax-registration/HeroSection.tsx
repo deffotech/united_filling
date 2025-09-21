@@ -1,7 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight, CheckCircle } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 import { Button } from "@/components/ui/button";
 import {
     Select,
@@ -68,10 +67,7 @@ const HeroSection = () => {
                       <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />PTRC & PTEC Number</li>
                       <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />PT Registration Certificate</li>
                     </ul>
-                    <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+                 
                   </CardContent>
                 </Card>
                 <Card className="border-dashed border-green-500">
@@ -87,10 +83,7 @@ const HeroSection = () => {
                       <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />PTRC & PTEC Number</li>
                       <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />PT Registration Certificate</li>
                     </ul>
-                    <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+                   
                   </CardContent>
                 </Card>
             </div>

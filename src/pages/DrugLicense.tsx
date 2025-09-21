@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/drug-license/Breadcrumb';
 import HeroSection from '@/components/drug-license/HeroSection';
-import OffersSection from '@/components/drug-license/OffersSection';
 import DetailsSection from '@/components/drug-license/DetailsSection';
 import DocumentsSection from '@/components/drug-license/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const DrugLicense = () => {
           <Breadcrumb />
           <div className="mt-4 grid gap-8">
             <HeroSection />
-            <OffersSection />
             <DocumentsSection />
             <DetailsSection />
           </div>

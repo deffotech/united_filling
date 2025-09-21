@@ -3,7 +3,6 @@ import Breadcrumb from "@/components/moa-amendment/Breadcrumb";
 import HeroSection from "@/components/moa-amendment/HeroSection";
 import DetailsSection from "@/components/moa-amendment/DetailsSection";
 import DocumentsSection from "@/components/moa-amendment/DocumentsSection";
-import OffersSection from "@/components/moa-amendment/OffersSection";
 
 const MOAAmendment = () => {
   return (
@@ -14,7 +13,6 @@ const MOAAmendment = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

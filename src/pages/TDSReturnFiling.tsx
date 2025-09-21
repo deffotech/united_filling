@@ -4,7 +4,6 @@ import Breadcrumb from "@/components/tds-return-filing/Breadcrumb";
 import HeroSection from "@/components/tds-return-filing/HeroSection";
 import DetailsSection from "@/components/tds-return-filing/DetailsSection";
 import DocumentsSection from "@/components/tds-return-filing/DocumentsSection";
-import OffersSection from "@/components/tds-return-filing/OffersSection";
 
 const TDSReturnFiling = () => {
   return (
@@ -16,7 +15,6 @@ const TDSReturnFiling = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

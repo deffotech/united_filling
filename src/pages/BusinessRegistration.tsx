@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/business-registration/Breadcrumb';
 import HeroSection from '@/components/business-registration/HeroSection';
-import OffersSection from '@/components/business-registration/OffersSection';
 import SearchSection from '@/components/business-registration/SearchSection';
 import ServicesGrid from '@/components/business-registration/ServicesGrid';
 import RightSidebar from '@/components/business-registration/RightSidebar';
@@ -25,7 +24,6 @@ const BusinessRegistration = () => {
             </aside>
             <div className="col-span-12 lg:col-span-7">
               <HeroSection />
-              <OffersSection />
               <SearchSection />
               <ServicesGrid />
             </div>

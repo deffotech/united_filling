@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/llp/Breadcrumb';
 import HeroSection from '@/components/llp/HeroSection';
-import Sidebar from '@/components/llp/Sidebar';
 import DetailsSection from '@/components/llp/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
 
@@ -28,7 +27,6 @@ const LLP = () => {
               
             </div>
             <aside className="lg:col-span-4">
-              <Sidebar />
             </aside>
           </div>
         </main>

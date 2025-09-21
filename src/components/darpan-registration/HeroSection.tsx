@@ -1,7 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -35,10 +34,7 @@ const HeroSection = () => {
                 <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />Darpan Number</li>
                 <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />Darpan Certificate</li>
               </ul>
-              <SendRequestButton 
-                serviceName="Darpan Registration"
-                className="mt-4 w-full"
-              />
+          
             </CardContent>
           </Card>
           

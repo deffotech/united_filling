@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/rcmc-registration/Breadcrumb';
 import HeroSection from '@/components/rcmc-registration/HeroSection';
-import OffersSection from '@/components/rcmc-registration/OffersSection';
 import DetailsSection from '@/components/rcmc-registration/DetailsSection';
 import DocumentsSection from '@/components/rcmc-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const RCMCRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
             <DocumentsSection />
           </div>

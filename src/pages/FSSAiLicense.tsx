@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/fssai-license/Breadcrumb';
 import HeroSection from '@/components/fssai-license/HeroSection';
-import OffersSection from '@/components/fssai-license/OffersSection';
 import DocumentsSection from '@/components/fssai-license/DocumentsSection';
 import DetailsSection from '@/components/fssai-license/DetailsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const FSSAiLicense = () => {
           <Breadcrumb />
           <div className="mt-4">
             <HeroSection />
-            <OffersSection />
             <DocumentsSection />
             <DetailsSection />
           </div>

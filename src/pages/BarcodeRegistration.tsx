@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/barcode-registration/Breadcrumb';
 import HeroSection from '@/components/barcode-registration/HeroSection';
-import OffersSection from '@/components/barcode-registration/OffersSection';
 import DetailsSection from '@/components/barcode-registration/DetailsSection';
 import DocumentsSection from '@/components/barcode-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const BarcodeRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
             <DocumentsSection />
           </div>

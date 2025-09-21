@@ -1,6 +1,5 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -19,10 +18,7 @@ const HeroSection = () => {
               <span className="text-gray-500 line-through">₹5,999</span>
               <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">33% OFF</span>
             </div>
-            <SendRequestButton 
-              serviceName="DIN Reactivation"
-              className="mt-6"
-            />
+           
           </div>
           <div>
             <Card>

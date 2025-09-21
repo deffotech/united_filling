@@ -4,7 +4,6 @@ import Breadcrumb from "@/components/tan-registration/Breadcrumb";
 import HeroSection from "@/components/tan-registration/HeroSection";
 import DetailsSection from "@/components/tan-registration/DetailsSection";
 import DocumentsSection from "@/components/tan-registration/DocumentsSection";
-import OffersSection from "@/components/tan-registration/OffersSection";
 
 const TANRegistration = () => {
   return (
@@ -16,7 +15,6 @@ const TANRegistration = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

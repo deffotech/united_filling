@@ -5,7 +5,6 @@ import Breadcrumb from '@/components/fssai-registration/Breadcrumb';
 import HeroSection from '@/components/fssai-registration/HeroSection';
 import DocumentsSection from '@/components/fssai-registration/DocumentsSection';
 import DetailsSection from '@/components/fssai-registration/DetailsSection';
-import Sidebar from '@/components/fssai-registration/Sidebar';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
@@ -23,7 +22,6 @@ const FSSAIRegistration = () => {
               <DetailsSection />
             </div>
             <aside className="lg:col-span-4">
-              <Sidebar />
             </aside>
           </div>
         </main>

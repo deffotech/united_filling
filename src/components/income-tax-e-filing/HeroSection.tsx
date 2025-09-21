@@ -99,7 +99,6 @@ const HeroSection = () => {
           </div>
 
           <div className="mt-4 space-y-2">
-            <h3 className="font-semibold">Offers and discounts</h3>
             <div className="flex items-center space-x-2">
               <span className="text-sm text-gray-500">
                 LEDGERS - Compliance Platform

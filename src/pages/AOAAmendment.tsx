@@ -4,7 +4,6 @@ import Breadcrumb from "@/components/aoa-amendment/Breadcrumb";
 import HeroSection from "@/components/aoa-amendment/HeroSection";
 import DetailsSection from "@/components/aoa-amendment/DetailsSection";
 import DocumentsSection from "@/components/aoa-amendment/DocumentsSection";
-import OffersSection from "@/components/aoa-amendment/OffersSection";
 
 const AOAAmendment = () => {
   return (
@@ -16,7 +15,7 @@ const AOAAmendment = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
+     
       <Footer />
     </div>
   );

@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/darpan-registration/Breadcrumb';
 import HeroSection from '@/components/darpan-registration/HeroSection';
-import OffersSection from '@/components/darpan-registration/OffersSection';
 import DetailsSection from '@/components/darpan-registration/DetailsSection';
 import DocumentsSection from '@/components/darpan-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const DarpanRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 grid gap-8">
             <HeroSection />
-            <OffersSection />
             <DocumentsSection />
             <DetailsSection />
           </div>

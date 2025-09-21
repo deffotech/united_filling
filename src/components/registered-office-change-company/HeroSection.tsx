@@ -1,6 +1,5 @@
 
 import { Star, ChevronRight } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -33,10 +32,7 @@ const HeroSection = () => {
                 <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Application Filing in MCA</li>
                 <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Updated MCA Master data copy</li>
               </ul>
-              <SendRequestButton 
-                serviceName="Registered Office Change - Company (Basic)"
-                className="mt-6 w-full"
-              />
+            
             </div>
 
             <div className="border rounded-lg p-4 bg-gray-50 relative pt-8">
@@ -46,10 +42,7 @@ const HeroSection = () => {
                 <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Application Filing in MCA</li>
                 <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Updated MCA Master data copy</li>
               </ul>
-              <SendRequestButton 
-                serviceName="Registered Office Change - Company (Same State ROC)"
-                className="mt-6 w-full"
-              />
+             
             </div>
           </div>
 

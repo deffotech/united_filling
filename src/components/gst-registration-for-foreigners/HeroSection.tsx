@@ -1,6 +1,6 @@
 
 import { Star, ChevronRight } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
+
 
 const HeroSection = () => {
     return (
@@ -45,10 +45,7 @@ const HeroSection = () => {
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>1 Year GST Filing & Compliance</span></li>
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>GST Payment Facilitation</span></li>
                             </ul>
-                            <SendRequestButton 
-                                serviceName="GST Registration for Foreigners"
-                                className="w-full mt-4"
-                            />
+                           
                         </div>
                     </div>
                 </div>

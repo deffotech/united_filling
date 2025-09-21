@@ -3,10 +3,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/partnership/Breadcrumb';
 import HeroSection from '@/components/partnership/HeroSection';
-import Sidebar from '@/components/partnership/Sidebar';
 import DetailsSection from '@/components/partnership/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
-import OffersSection from '@/components/consultation/OffersSection';
 import PricingSection from '@/components/partnership/PricingSection';
 import DocumentsSection from '@/components/partnership/DocumentsSection';
 
@@ -26,10 +24,8 @@ const Partnership = () => {
                 <ComparisonTable />
               </div>
               <DocumentsSection />
-              <OffersSection />
             </div>
             <aside className="lg:col-span-4">
-              <Sidebar />
             </aside>
           </div>
         </main>

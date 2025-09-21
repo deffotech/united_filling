@@ -11,7 +11,6 @@ import {
   Users,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import Sidebar from "@/components/itr1-return-filing/Sidebar";
 
 const ITR4ReturnFiling = () => {
   return (
@@ -147,7 +146,6 @@ const ITR4ReturnFiling = () => {
             </Card>
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

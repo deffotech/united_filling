@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/copyright-registration/Breadcrumb";
 import HeroSection from "@/components/copyright-registration/HeroSection";
 import DetailsSection from "@/components/copyright-registration/DetailsSection";
-import Sidebar from "@/components/copyright-registration/Sidebar";
 import ComparisonTable from "@/components/copyright-registration/ComparisonTable";
 import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
@@ -22,7 +21,6 @@ const CopyrightRegistration = () => {
             <ComparisonTable />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

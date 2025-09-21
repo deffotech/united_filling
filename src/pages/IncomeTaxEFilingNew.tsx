@@ -6,7 +6,6 @@ import HeroSection from "@/components/income-tax-e-filing-new/HeroSection";
 import ServiceSelection from "@/components/income-tax-e-filing-new/ServiceSelection";
 import QuickSteps from "@/components/income-tax-e-filing-new/QuickSteps";
 import WhoNeedsToFile from "@/components/income-tax-e-filing-new/WhoNeedsToFile";
-import Sidebar from "@/components/income-tax-e-filing-new/Sidebar";
 
 const IncomeTaxEFilingNew = () => {
   return (
@@ -22,7 +21,6 @@ const IncomeTaxEFilingNew = () => {
             <WhoNeedsToFile />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

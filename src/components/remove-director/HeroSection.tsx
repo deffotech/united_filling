@@ -1,7 +1,6 @@
 import { Star, CheckCircle } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Link } from 'react-router-dom';
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -54,10 +53,7 @@ const HeroSection = () => {
                         <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>MCA Filing</span></li>
                     </ul>
                 </div>
-                <SendRequestButton 
-                  serviceName="Remove Director - Voluntary Resignation"
-                  className="mt-4 w-full"
-                />
+               
             </div>
             <div className="border border-yellow-200 bg-yellow-50/50 rounded-lg p-4 flex flex-col justify-between">
                 <div>
@@ -70,10 +66,7 @@ const HeroSection = () => {
                         <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" /><span>Legal Documentation</span></li>
                     </ul>
                 </div>
-                <SendRequestButton 
-                  serviceName="Remove Director - Board Removal"
-                  className="mt-4 w-full"
-                />
+               
             </div>
           </div>
           <div className="flex justify-between items-center mt-4 text-sm">

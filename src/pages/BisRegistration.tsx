@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/bis-registration/Breadcrumb';
 import HeroSection from '@/components/bis-registration/HeroSection';
-import OffersSection from '@/components/bis-registration/OffersSection';
 import DetailsSection from '@/components/bis-registration/DetailsSection';
 import DocumentsSection from '@/components/bis-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const BisRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
             <DocumentsSection />
           </div>

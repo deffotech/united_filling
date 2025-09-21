@@ -8,7 +8,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -52,10 +51,7 @@ const HeroSection = () => {
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Allotment Number</li>
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Login credentials</li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="Barcode Registration - Basic"
-                  className="mt-4 w-full"
-                />
+              
               </div>
               <div className="border rounded-lg p-4 relative border-dashed border-green-500">
                 <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full absolute top-2 right-2">2 Exclusive Offers</div>
@@ -66,10 +62,7 @@ const HeroSection = () => {
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Allotment Number</li>
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Login credentials</li>
                 </ul>
-                <SendRequestButton 
-                  serviceName="Barcode Registration - Standard"
-                  className="mt-4 w-full"
-                />
+             
               </div>
             </div>
             <div className="flex justify-between mt-6 text-sm">

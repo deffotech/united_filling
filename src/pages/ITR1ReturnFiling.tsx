@@ -6,7 +6,7 @@ import HeroSection from "@/components/itr1-return-filing/HeroSection";
 import DetailsSection from "@/components/itr1-return-filing/DetailsSection";
 import DocumentsSection from "@/components/itr1-return-filing/DocumentsSection";
 import FAQSection from "@/components/itr1-return-filing/FAQSection";
-import Sidebar from "@/components/itr1-return-filing/Sidebar";
+
 
 const ITR1ReturnFiling = () => {
   return (
@@ -21,7 +21,7 @@ const ITR1ReturnFiling = () => {
             <FAQSection />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
+            
           </div>
         </div>
       </main>

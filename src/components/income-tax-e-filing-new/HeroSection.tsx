@@ -1,4 +1,3 @@
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -23,10 +22,7 @@ const HeroSection = () => {
                 <li>• Commercial Consultation</li>
               </ul>
             </div>
-            <SendRequestButton 
-              serviceName="Income Tax E-Filing"
-              className="bg-green-500 hover:bg-green-600 text-white px-8 py-2"
-            />
+         
           </div>
         </div>
         <div className="relative">

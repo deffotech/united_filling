@@ -5,7 +5,6 @@ import Breadcrumb from "@/components/15ca-15cb-filing/Breadcrumb";
 import HeroSection from "@/components/15ca-15cb-filing/HeroSection";
 import DetailsSection from "@/components/15ca-15cb-filing/DetailsSection";
 import DocumentsSection from "@/components/15ca-15cb-filing/DocumentsSection";
-import OffersSection from "@/components/15ca-15cb-filing/OffersSection";
 
 const FifteenCA15CBFiling = () => {
   return (
@@ -17,7 +16,6 @@ const FifteenCA15CBFiling = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

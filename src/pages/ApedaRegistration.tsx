@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/apeda-registration/Breadcrumb';
 import HeroSection from '@/components/apeda-registration/HeroSection';
-import OffersSection from '@/components/apeda-registration/OffersSection';
 import DetailsSection from '@/components/apeda-registration/DetailsSection';
 import DocumentsSection from '@/components/apeda-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,7 @@ const ApedaRegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
+           
             <DetailsSection />
             <DocumentsSection />
           </div>

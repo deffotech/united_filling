@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star, Check } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 
 const HeroSection = () => {
@@ -91,11 +90,7 @@ const HeroSection = () => {
                     <span>Startup India Certificate</span>
                   </li>
                 </ul>
-                <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
-
+             
               </div>
               <div className="border rounded-lg p-4">
                 <p className="text-xs text-green-600 bg-green-100 rounded-full px-2 py-0.5 inline-block font-semibold">
@@ -128,10 +123,7 @@ const HeroSection = () => {
                     <span>Class 3 DSC - Company</span>
                   </li>
                 </ul>
-                <SendRequestButton 
-                serviceName="12A Registration"
-                className="mt-4 w-full"
-              />
+             
               </div>
             </div>
             <div className="flex justify-between mt-4 text-sm">

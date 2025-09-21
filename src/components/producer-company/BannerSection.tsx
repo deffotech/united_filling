@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 
 const BannerSection = () => {

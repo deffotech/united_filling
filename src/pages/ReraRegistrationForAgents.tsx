@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/rera-registration-agents/Breadcrumb';
 import HeroSection from '@/components/rera-registration-agents/HeroSection';
-import OffersSection from '@/components/rera-registration-agents/OffersSection';
 import DetailsSection from '@/components/rera-registration-agents/DetailsSection';
 import DocumentsSection from '@/components/rera-registration-agents/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -17,7 +16,6 @@ const ReraRegistrationForAgents = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
             <DocumentsSection />
           </div>

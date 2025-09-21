@@ -2,9 +2,8 @@
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/producer-company/Breadcrumb';
 import HeroSection from '@/components/producer-company/HeroSection';
-import Sidebar from '@/components/producer-company/Sidebar';
 import DetailsSection from '@/components/producer-company/DetailsSection';
-import DocumentsSection from '@/components/producer-company/DocumentsSection';
+
 
 const ProducerCompany = () => {
   return (
@@ -18,7 +17,7 @@ const ProducerCompany = () => {
               <DetailsSection />
             </div>
             <aside className="lg:col-span-1">
-              <Sidebar />
+              
             </aside>
           </div>
         </main>

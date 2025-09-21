@@ -3,7 +3,6 @@ import Breadcrumb from "@/components/udyam-registration/Breadcrumb";
 import HeroSection from "@/components/udyam-registration/HeroSection";
 import DetailsSection from "@/components/udyam-registration/DetailsSection";
 import DocumentsSection from "@/components/udyam-registration/DocumentsSection";
-import OffersSection from "@/components/udyam-registration/OffersSection";
 
 const UdyamRegistration = () => {
   return (
@@ -15,7 +14,6 @@ const UdyamRegistration = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <OffersSection />
       <Footer />
     </div>
   );

@@ -2,7 +2,6 @@
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/trade-license/Breadcrumb';
 import HeroSection from '@/components/trade-license/HeroSection';
-import OffersSection from '@/components/trade-license/OffersSection';
 import DetailsSection from '@/components/trade-license/DetailsSection';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -16,7 +15,6 @@ const TradeLicense = () => {
           <Breadcrumb />
           <div className="mt-4">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
           </div>
         </main>

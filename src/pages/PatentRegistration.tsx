@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/patent-registration/Breadcrumb";
 import HeroSection from "@/components/patent-registration/HeroSection";
 import DetailsSection from "@/components/patent-registration/DetailsSection";
-import Sidebar from "@/components/patent-registration/Sidebar";
 import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
 
@@ -19,7 +18,6 @@ const PatentRegistration = () => {
             <DetailsSection />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

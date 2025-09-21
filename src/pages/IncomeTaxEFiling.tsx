@@ -8,7 +8,6 @@ import WhoNeedsToEFileSection from "@/components/income-tax-e-filing/WhoNeedsToE
 import EligibilitySection from "@/components/income-tax-e-filing/EligibilitySection";
 import FormsAndDatesSection from "@/components/income-tax-e-filing/FormsAndDatesSection";
 import DocumentsAndProcedureSection from "@/components/income-tax-e-filing/DocumentsAndProcedureSection";
-import Sidebar from "@/components/income-tax-e-filing/Sidebar";
 
 const IncomeTaxEFiling = () => {
   return (
@@ -26,7 +25,6 @@ const IncomeTaxEFiling = () => {
             <DocumentsAndProcedureSection />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

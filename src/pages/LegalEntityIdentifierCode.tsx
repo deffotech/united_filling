@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/legal-entity-identifier-code/Breadcrumb';
 import HeroSection from '@/components/legal-entity-identifier-code/HeroSection';
-import OffersSection from '@/components/legal-entity-identifier-code/OffersSection';
 import DetailsSection from '@/components/legal-entity-identifier-code/DetailsSection';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -16,7 +15,6 @@ const LegalEntityIdentifierCode = () => {
           <Breadcrumb />
           <div className="mt-4">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
           </div>
         </main>

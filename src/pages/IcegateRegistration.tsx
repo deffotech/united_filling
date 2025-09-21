@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/icegate-registration/Breadcrumb';
 import HeroSection from '@/components/icegate-registration/HeroSection';
-import OffersSection from '@/components/icegate-registration/OffersSection';
 import DetailsSection from '@/components/icegate-registration/DetailsSection';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -17,7 +16,6 @@ const IcegateRegistration = () => {
           <Breadcrumb />
           <div className="mt-4">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
           </div>
         </main>

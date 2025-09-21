@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Breadcrumb from "@/components/itr2-return-filing/Breadcrumb";
 import HeroSection from "@/components/itr2-return-filing/HeroSection";
 import DetailsSection from "@/components/itr2-return-filing/DetailsSection";
-import Sidebar from "@/components/itr1-return-filing/Sidebar";
 
 const ITR2ReturnFiling = () => {
   return (
@@ -18,7 +17,6 @@ const ITR2ReturnFiling = () => {
             <DetailsSection />
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
           </div>
         </div>
       </main>

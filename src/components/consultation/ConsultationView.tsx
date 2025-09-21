@@ -9,7 +9,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Link } from "react-router-dom";
-import OffersSection from "./OffersSection";
 
 const ConsultationCard = ({
   type,
@@ -136,7 +135,6 @@ const ConsultationView = () => {
         </Link>
       </div>
 
-      <OffersSection />
     </div>
   );
 };

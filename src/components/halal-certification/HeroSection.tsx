@@ -1,7 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 const HeroSection = () => {
   return (
@@ -45,10 +44,7 @@ const HeroSection = () => {
                     <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500" />Personalised Session</li>
                     <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500" />Process & Pricing</li>
                   </ul>
-                  <SendRequestButton 
-                    serviceName="Halal Consultation"
-                    className="mt-4 w-full"
-                  />
+                 
                 </CardContent>
               </Card>
               
@@ -61,10 +57,7 @@ const HeroSection = () => {
                     <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500" />Halal Audit</li>
                     <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500" />Halal Certification</li>
                   </ul>
-                  <SendRequestButton 
-                    serviceName="License Support"
-                    className="mt-4 w-full"
-                  />
+                 
                 </CardContent>
               </Card>
             </div>

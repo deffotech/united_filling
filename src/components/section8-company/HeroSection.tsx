@@ -1,5 +1,4 @@
 import { Star } from "lucide-react";
-import SendRequestButton from "@/components/ui/SendRequestButton";
 
 
 const HeroSection = () => {
@@ -39,10 +38,7 @@ const HeroSection = () => {
             The profits of such companies are utilized for promoting these
             objectives and are not distributed among the Company's members.
           </p>
-          <SendRequestButton 
-                serviceName="12A Registration"
-                className="absolute mt-3  w-30px"
-              />
+        
         </div>
      
       </div>

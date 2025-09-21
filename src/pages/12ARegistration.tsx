@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/12a-registration/Breadcrumb';
 import HeroSection from '@/components/12a-registration/HeroSection';
-import OffersSection from '@/components/12a-registration/OffersSection';
 import DetailsSection from '@/components/12a-registration/DetailsSection';
 import DocumentsSection from '@/components/12a-registration/DocumentsSection';
 import { Button } from '@/components/ui/button';
@@ -18,7 +17,6 @@ const TwelveARegistration = () => {
           <Breadcrumb />
           <div className="mt-4 space-y-8">
             <HeroSection />
-            <OffersSection />
             <DetailsSection />
             <DocumentsSection />
           </div>
