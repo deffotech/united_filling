@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { } from 'react-router-dom';
 import Sidebar from '@/pages/sideBar';
 import Footer from '@/components/Footer';
 
@@ -8,6 +9,7 @@ interface LayoutProps {
 }
 
 const Layout = ({ children, showSidebar = true }: LayoutProps) => {
+  
   return (
     <div className="bg-white min-h-screen">
       <div className="bg-gray-50/50">
@@ -26,7 +28,7 @@ const Layout = ({ children, showSidebar = true }: LayoutProps) => {
           )}
         </main>
       </div>
-      <Footer />
+  <Footer />
     </div>
   );
 };

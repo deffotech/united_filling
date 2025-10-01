@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -107,8 +106,7 @@ const WindingUpCompany = () => {
             </Card>
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/itr1-return-filing/Breadcrumb";
 import HeroSection from "@/components/itr1-return-filing/HeroSection";
@@ -24,8 +23,7 @@ const ITR1ReturnFiling = () => {
             
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

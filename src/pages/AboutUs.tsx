@@ -1,5 +1,4 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
 import { Users, Target, Award, Globe } from "lucide-react";
 
 const AboutUs = () => {
@@ -152,8 +151,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

@@ -1,5 +1,4 @@
 
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/producer-company/Breadcrumb';
 import HeroSection from '@/components/producer-company/HeroSection';
 import DetailsSection from '@/components/producer-company/DetailsSection';
@@ -21,8 +20,7 @@ const ProducerCompany = () => {
             </aside>
           </div>
         </main>
-      </div>
-      <Footer />
+  </div>
     </div>
   );
 };

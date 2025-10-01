@@ -1,5 +1,4 @@
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/gst-annual-return-filing-gstr9/Breadcrumb";
 import HeroSection from "@/components/gst-annual-return-filing-gstr9/HeroSection";
@@ -21,8 +20,7 @@ const GstAnnualReturnFilingGstr9 = () => {
           <div className="lg:col-span-1">
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
       <Button className="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg h-16 w-auto px-6 text-lg z-50">
         <MessageSquare className="mr-3 h-6 w-6" />
         Live Chat with Experts

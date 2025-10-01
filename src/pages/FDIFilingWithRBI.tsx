@@ -1,5 +1,4 @@
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/fdi-filing-rbi/Breadcrumb";
 import HeroSection from "@/components/fdi-filing-rbi/HeroSection";
@@ -20,8 +19,7 @@ const FDIFilingWithRBI = () => {
           
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

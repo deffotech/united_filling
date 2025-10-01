@@ -1,6 +1,5 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/section8-company/Breadcrumb';
 import HeroSection from '@/components/section8-company/HeroSection';
 import DetailsSection from '@/components/section8-company/DetailsSection';
@@ -27,8 +26,7 @@ const Section8Company = () => {
             </aside>
           </div>
         </main>
-      </div>
-      <Footer />
+  </div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/income-tax-e-filing-new/Breadcrumb";
 import HeroSection from "@/components/income-tax-e-filing-new/HeroSection";
@@ -23,8 +22,7 @@ const IncomeTaxEFilingNew = () => {
           <div className="lg:col-span-1">
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

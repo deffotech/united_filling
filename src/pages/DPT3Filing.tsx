@@ -1,5 +1,4 @@
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/dpt3-filing/Breadcrumb';
 import HeroSection from '@/components/dpt3-filing/HeroSection';
 import DetailsSection from '@/components/dpt3-filing/DetailsSection';
@@ -15,8 +14,7 @@ const DPT3Filing = () => {
           <DetailsSection />
           <DocumentsSection />
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

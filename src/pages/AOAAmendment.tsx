@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+// Footer provided by Layout
 import Breadcrumb from "@/components/aoa-amendment/Breadcrumb";
 import HeroSection from "@/components/aoa-amendment/HeroSection";
 import DetailsSection from "@/components/aoa-amendment/DetailsSection";
@@ -16,7 +16,7 @@ const AOAAmendment = () => {
       <DetailsSection />
       <DocumentsSection />
      
-      <Footer />
+      
     </div>
   );
 };

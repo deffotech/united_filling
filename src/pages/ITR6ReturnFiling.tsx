@@ -1,5 +1,4 @@
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/itr6-return-filing/Breadcrumb";
 import HeroSection from "@/components/itr6-return-filing/HeroSection";
@@ -19,8 +18,7 @@ const ITR6ReturnFiling = () => {
           <div className="lg:col-span-1">
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

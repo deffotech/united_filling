@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer';
+// Footer provided by Layout
 import ExpertRequestForm from '@/components/ExpertRequestForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -210,7 +210,7 @@ const TalkToExpert = () => {
         </div>
       </section>
 
-      <Footer />
+      
     </div>
   );
 };

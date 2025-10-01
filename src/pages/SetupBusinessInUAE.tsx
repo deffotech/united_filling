@@ -1,5 +1,5 @@
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+// Footer provided by Layout
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Building, Globe, FileText, Users, Shield, TrendingUp } from 'lucide-react';
@@ -202,7 +202,7 @@ const SetupBusinessInUAE = () => {
         </div>
       </section>
 
-      <Footer />
+      
     </div>
   );
 };

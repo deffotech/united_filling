@@ -1,6 +1,5 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { FileText, Users, Building, Briefcase, TrendingUp, Shield } from 'lucide-react';
@@ -75,7 +74,7 @@ const Guide = () => {
 
   return (
     <div className="min-h-screen">
-      <Header />
+  <Header />
       
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-600 to-green-800 text-white py-20">
@@ -254,7 +253,7 @@ const Guide = () => {
         </div>
       </section>
 
-      <Footer />
+      
     </div>
   );
 };

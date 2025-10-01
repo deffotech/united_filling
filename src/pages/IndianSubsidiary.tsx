@@ -1,6 +1,5 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/indian-subsidiary/Breadcrumb';
 import HeroSection from '@/components/indian-subsidiary/HeroSection';
 import DetailsSection from '@/components/indian-subsidiary/DetailsSection';
@@ -23,8 +22,7 @@ const IndianSubsidiary = () => {
             </aside>
           </div>
         </main>
-      </div>
-      <Footer />
+  </div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/business-income-tax/Breadcrumb";
 import HeroSection from "@/components/business-income-tax/HeroSection";
@@ -19,8 +18,7 @@ const BusinessIncomeTax = () => {
           <div className="lg:col-span-1">
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { Building2, FileText, Copyright, Scale, Calculator, UserCheck, Globe, CreditCard, Briefcase, Users, FileCheck, Gavel } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -159,8 +158,7 @@ const Services = () => {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

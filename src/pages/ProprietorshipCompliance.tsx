@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+// Footer provided by Layout
 import Header from "@/components/Header";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -139,8 +139,7 @@ const ProprietorshipCompliance = () => {
           <div className="lg:col-span-1">
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/llp-compliance/Breadcrumb";
 import DetailsSection from "@/components/llp-compliance/DetailsSection";
@@ -19,8 +18,7 @@ const LlpCompliance = () => {
           <div className="lg:col-span-1">
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

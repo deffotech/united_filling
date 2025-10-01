@@ -1,5 +1,5 @@
 
-import Footer from "@/components/Footer";
+// Footer provided by Layout
 import Breadcrumb from "@/components/tan-registration/Breadcrumb";
 import HeroSection from "@/components/tan-registration/HeroSection";
 import DetailsSection from "@/components/tan-registration/DetailsSection";
@@ -15,7 +15,7 @@ const TANRegistration = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <Footer />
+      
     </div>
   );
 };

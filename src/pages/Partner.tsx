@@ -1,6 +1,5 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import {
   Users,
   Building,
@@ -198,8 +197,7 @@ const Partner = () => {
             </button>
           </div>
         </section>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

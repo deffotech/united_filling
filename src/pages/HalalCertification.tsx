@@ -1,6 +1,5 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/halal-certification/Breadcrumb';
 import HeroSection from '@/components/halal-certification/HeroSection';
 import DetailsSection from '@/components/halal-certification/DetailsSection';
@@ -16,8 +15,7 @@ const HalalCertification = () => {
             <DetailsSection />
           </div>
         </main>
-      </div>
-      <Footer />
+  </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+// Footer is provided by Layout; do not import it here to avoid duplication.
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -226,7 +226,7 @@ const Profile = () => {
         <div className="flex items-center justify-center min-h-[60vh]">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-green-600"></div>
         </div>
-        <Footer />
+        
       </div>
     );
   }

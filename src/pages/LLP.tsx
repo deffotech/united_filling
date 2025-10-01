@@ -1,6 +1,5 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/llp/Breadcrumb';
 import HeroSection from '@/components/llp/HeroSection';
 import DetailsSection from '@/components/llp/DetailsSection';
@@ -30,8 +29,7 @@ const LLP = () => {
             </aside>
           </div>
         </main>
-      </div>
-      <Footer />
+  </div>
     </div>
   );
 };

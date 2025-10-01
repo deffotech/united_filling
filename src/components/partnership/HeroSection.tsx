@@ -16,31 +16,28 @@ const HeroSection = () => {
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         <div className="md:col-span-4">
-          <div className="bg-blue-600 rounded-lg text-white overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-bold">PARTNERSHIP</h2>
-              <h2 className="text-2xl font-bold mb-4">REGISTRATION</h2>
-              <div className="bg-white text-blue-600 text-center py-2 rounded">
-                Partnership Deed & Stamp Paper
-              </div>
-            </div>
+          <div className="relative">
             <img
               src="assets/partnership-registration.jpg"
               alt="Partnership"
-              className="w-full h-48 object-cover"
+              className="rounded-lg w-full h-auto object-cover"
             />
-            <div className="p-6 text-sm">
-              <p>Pan Card</p>
-              <p>Aadhar Card</p>
-              <p>Rental Agreement</p>
-              <a href="#" className="font-semibold mt-2 inline-block">
-                Load More
-              </a>
+            <div className="absolute top-0 left-0 bg-blue-900 bg-opacity-70 text-white p-4 rounded-tl-lg w-full">
+              <h3 className="font-bold text-lg leading-tight">PARTNERSHIP REGISTRATION</h3>
+              <p className="text-xs mt-1">Partnership Deed & Stamp Paper</p>
             </div>
+          </div>
+          <div className="mt-4 text-sm">
+            <p className="font-medium">Pan Card</p>
+            <p className="font-medium mt-1">Aadhar Card</p>
+            <p className="font-medium mt-1">Rental Agreement</p>
+            <a href="#" className="text-blue-600 hover:underline mt-1 inline-block">
+              Load More
+            </a>
           </div>
         </div>
         <div className="md:col-span-8">
-          <h1 className="text-2xl font-bold text-gray-800">
+          <h1 className="text-3xl font-bold text-gray-800">
             Partnership Firm Registration
           </h1>
           <div className="flex items-center my-2">
@@ -59,18 +56,6 @@ const HeroSection = () => {
             expert-drafted deed by our team. Stamp paper will be under the
             client scope.
           </p>
-
-          <Select>
-            <SelectTrigger className="w-full">
-              <SelectValue placeholder="Andaman and Nicobar Islands" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="andaman">
-                Andaman and Nicobar Islands
-              </SelectItem>
-              <SelectItem value="arunachal">Arunachal Pradesh</SelectItem>
-            </SelectContent>
-          </Select>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
             <Card className="border-green-200">

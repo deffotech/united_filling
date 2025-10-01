@@ -1,5 +1,4 @@
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/company-compliance/Breadcrumb";
 import DetailsSection from "@/components/company-compliance/DetailsSection";
@@ -22,7 +21,7 @@ const CompanyCompliance = () => {
           </div>
         </div>
       </main>
-      <Footer />
+      
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+// Footer provided by Layout
 import Breadcrumb from "@/components/moa-amendment/Breadcrumb";
 import HeroSection from "@/components/moa-amendment/HeroSection";
 import DetailsSection from "@/components/moa-amendment/DetailsSection";
@@ -13,7 +13,7 @@ const MOAAmendment = () => {
       <HeroSection />
       <DetailsSection />
       <DocumentsSection />
-      <Footer />
+      
     </div>
   );
 };

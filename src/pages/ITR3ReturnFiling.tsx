@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -144,8 +143,7 @@ const ITR3ReturnFiling = () => {
             
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

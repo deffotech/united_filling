@@ -1,5 +1,4 @@
 
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/trust-registration/Breadcrumb';
 import HeroSection from '@/components/trust-registration/HeroSection';
 import PricingSection from '@/components/trust-registration/PricingSection';
@@ -27,7 +26,7 @@ const TrustRegistration = () => {
           </div>
         </main>
       </div>
-      <Footer />
+        
     </div>
   );
 };

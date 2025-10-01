@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/share-transfer/Breadcrumb";
 import HeroSection from "@/components/share-transfer/HeroSection";
 import DetailsSection from "@/components/share-transfer/DetailsSection";
@@ -12,8 +11,7 @@ const ShareTransfer = () => {
       </div>
       <HeroSection />
       <DetailsSection />
-      <DocumentsSection />
-      <Footer />
+  <DocumentsSection />
     </div>
   );
 };

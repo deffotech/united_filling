@@ -1,6 +1,5 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/private-limited-company/Breadcrumb';
 import HeroSection from '@/components/private-limited-company/HeroSection';
 
@@ -30,8 +29,7 @@ const PrivateLimitedCompany = () => {
             </aside>
           </div>
         </main>
-      </div>
-      <Footer />
+  </div>
     </div>
   );
 };

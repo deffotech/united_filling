@@ -1,6 +1,5 @@
 
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/income-tax-notice/Breadcrumb";
 import HeroSection from "@/components/income-tax-notice/HeroSection";
 import DetailsSection from "@/components/income-tax-notice/DetailsSection";
@@ -15,8 +14,7 @@ const IncomeTaxNotice = () => {
       </div>
       <HeroSection />
       <DetailsSection />
-      <DocumentsSection />
-      <Footer />
+  <DocumentsSection />
     </div>
   );
 };

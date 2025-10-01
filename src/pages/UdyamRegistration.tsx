@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/udyam-registration/Breadcrumb";
 import HeroSection from "@/components/udyam-registration/HeroSection";
 import DetailsSection from "@/components/udyam-registration/DetailsSection";
@@ -13,8 +12,7 @@ const UdyamRegistration = () => {
       </div>
       <HeroSection />
       <DetailsSection />
-      <DocumentsSection />
-      <Footer />
+  <DocumentsSection />
     </div>
   );
 };

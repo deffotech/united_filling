@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/nidhi-company/Breadcrumb';
 import HeroSection from '@/components/nidhi-company/HeroSection';
 import DetailsSection from '@/components/nidhi-company/DetailsSection';
@@ -18,7 +17,7 @@ const NidhiCompany = () => {
           
         </div>
       </main>
-      <Footer />
+          
     </div>
   );
 };

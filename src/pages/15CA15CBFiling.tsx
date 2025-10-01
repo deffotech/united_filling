@@ -1,6 +1,5 @@
 
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/15ca-15cb-filing/Breadcrumb";
 import HeroSection from "@/components/15ca-15cb-filing/HeroSection";
 import DetailsSection from "@/components/15ca-15cb-filing/DetailsSection";
@@ -15,8 +14,7 @@ const FifteenCA15CBFiling = () => {
       </div>
       <HeroSection />
       <DetailsSection />
-      <DocumentsSection />
-      <Footer />
+  <DocumentsSection />
     </div>
   );
 };

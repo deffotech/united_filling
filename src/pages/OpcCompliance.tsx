@@ -1,5 +1,5 @@
 
-import Footer from "@/components/Footer";
+// Footer provided by Layout
 import Header from "@/components/Header";
 import Breadcrumb from "@/components/opc-compliance/Breadcrumb";
 import DetailsSection from "@/components/opc-compliance/DetailsSection";
@@ -21,8 +21,7 @@ const OpcCompliance = () => {
            
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

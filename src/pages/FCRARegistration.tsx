@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/fcra-registration/Breadcrumb";
 import HeroSection from "@/components/fcra-registration/HeroSection";
 import DetailsSection from "@/components/fcra-registration/DetailsSection";
@@ -14,8 +13,7 @@ const FCRARegistration = () => {
       </div>
       <HeroSection />
       <DetailsSection />
-      <DocumentsSection />
-      <Footer />
+  <DocumentsSection />
     </div>
   );
 };

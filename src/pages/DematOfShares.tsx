@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/demat-of-shares/Breadcrumb";
 import HeroSection from "@/components/demat-of-shares/HeroSection";
 import DetailsSection from "@/components/demat-of-shares/DetailsSection";
@@ -14,8 +13,7 @@ const DematOfShares = () => {
       </div>
       <HeroSection />
       <DetailsSection />
-      <DocumentsSection />
-      <Footer />
+  <DocumentsSection />
     </div>
   );
 };
