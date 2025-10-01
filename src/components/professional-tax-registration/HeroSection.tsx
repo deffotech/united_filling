@@ -2,6 +2,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 import {
     Select,
     SelectContent,
@@ -67,7 +69,22 @@ const HeroSection = () => {
                       <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />PTRC & PTEC Number</li>
                       <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />PT Registration Certificate</li>
                     </ul>
-                 
+                    <div className="flex gap-2 mt-4">
+                      <AddToCartButton
+                        serviceId="Andhra Pradesh PT"
+                        serviceName="Andhra Pradesh - Excluding visakhapatnam"
+                        price={2999}
+                        className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                        variant="outline"
+                      >
+                        ADD TO CART - ₹2,999
+                      </AddToCartButton>
+                      <AddToWishlistButton
+                        serviceId="Andhra Pradesh PT"
+                        serviceName="Andhra Pradesh - Excluding visakhapatnam"
+                        price={2999}
+                      />
+                    </div>
                   </CardContent>
                 </Card>
                 <Card className="border-dashed border-green-500">
@@ -83,7 +100,22 @@ const HeroSection = () => {
                       <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />PTRC & PTEC Number</li>
                       <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />PT Registration Certificate</li>
                     </ul>
-                   
+                    <div className="flex gap-2 mt-4">
+                      <AddToCartButton
+                        serviceId="Chennai PT"
+                        serviceName="Chennai"
+                        price={4999}
+                        className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                        variant="outline"
+                      >
+                        ADD TO CART - ₹4,999
+                      </AddToCartButton>
+                      <AddToWishlistButton
+                        serviceId="Chennai PT"
+                        serviceName="Chennai"
+                        price={4999}
+                      />
+                    </div>
                   </CardContent>
                 </Card>
             </div>

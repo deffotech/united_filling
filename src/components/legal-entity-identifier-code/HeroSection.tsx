@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 import {
   Select,
   SelectContent,
@@ -89,7 +91,22 @@ const HeroSection = () => {
                       LEI Number
                     </li>
                   </ul>
-                 
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="LEI 1 Year"
+                      serviceName="1 Year"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="LEI 1 Year"
+                      serviceName="1 Year"
+                      price={2999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -116,7 +133,22 @@ const HeroSection = () => {
                       LEI Number
                     </li>
                   </ul>
-                  
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="LEI 3 Years"
+                      serviceName="3 Years"
+                      price={4999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹4,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="LEI 3 Years"
+                      serviceName="3 Years"
+                      price={4999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>

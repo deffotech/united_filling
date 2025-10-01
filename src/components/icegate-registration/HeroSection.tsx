@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronDown, ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 
 const HeroSection = () => {
@@ -63,7 +65,22 @@ const HeroSection = () => {
                       ICEGATE Registration Number
                     </li>
                   </ul>
-                 
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="ICEGATE Registration"
+                      serviceName="ICEGATE Registration"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="ICEGATE Registration"
+                      serviceName="ICEGATE Registration"
+                      price={2999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -90,7 +107,22 @@ const HeroSection = () => {
                       Class 3 Encrypted DSC
                     </li>
                   </ul>
-                  
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="ICEGATE Registration + DSC"
+                      serviceName="ICEGATE Registration + DSC"
+                      price={4999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹4,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="ICEGATE Registration + DSC"
+                      serviceName="ICEGATE Registration + DSC"
+                      price={4999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>

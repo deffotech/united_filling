@@ -1,6 +1,8 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -44,7 +46,22 @@ const HeroSection = () => {
                     <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500" />Personalised Session</li>
                     <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500" />Process & Pricing</li>
                   </ul>
-                 
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Halal Consultation"
+                      serviceName="Halal Consultation"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Halal Consultation"
+                      serviceName="Halal Consultation"
+                      price={2999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
               
@@ -57,7 +74,22 @@ const HeroSection = () => {
                     <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500" />Halal Audit</li>
                     <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-1 text-green-500" />Halal Certification</li>
                   </ul>
-                 
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Halal License Support"
+                      serviceName="License Support"
+                      price={4999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹4,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Halal License Support"
+                      serviceName="License Support"
+                      price={4999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>

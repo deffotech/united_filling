@@ -6,7 +6,7 @@ const BannerSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
         <div className="relative">
           <img 
-            src="/lovable-uploads/b045c707-0c13-4c04-bce9-eb051a44f997.png" 
+            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1974&auto=format&fit=crop" 
             alt="Producer Company Registration" 
             className="w-full h-64 md:h-80 object-cover"
           />

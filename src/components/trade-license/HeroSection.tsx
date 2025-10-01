@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 import {
   Select,
@@ -92,7 +94,22 @@ const HeroSection = () => {
                     Year Trade License
                   </li>
                 </ul>
-             
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Chennai Trade License"
+                    serviceName="Chennai"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Chennai Trade License"
+                    serviceName="Chennai"
+                    price={2999}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="border-dashed border-green-500">
@@ -122,8 +139,22 @@ const HeroSection = () => {
                     Year Trade License
                   </li>
                 </ul>
-               className="mt-4 w-full"
-            
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Telangana Trade License"
+                    serviceName="Telangana"
+                    price={4999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹4,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Telangana Trade License"
+                    serviceName="Telangana"
+                    price={4999}
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>
