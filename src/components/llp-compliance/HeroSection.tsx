@@ -21,7 +21,7 @@ const HeroSection = () => {
           </div>
           <p className="text-gray-600 mt-4 mb-6">
             File your business tax returns and maintain compliance seamlessly
-            through United Fillings.com. Get a Dedicated Accountant and LEDGERS compliance
+            through United Filings.com. Get a Dedicated Accountant and LEDGERS compliance
             platform for your business.
           </p>
 

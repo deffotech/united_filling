@@ -1,13 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+
 
 const HeroSection = () => {
   return (
@@ -32,14 +26,6 @@ const HeroSection = () => {
               100 Barcodes with a validity of 1 year having a turnover of up to 5 crores.
             </p>
             <div className="mt-4">
-              <Select defaultValue="basic">
-                <SelectTrigger className="w-full md:w-1/2">
-                  <SelectValue placeholder="Select a plan" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="basic">Basic</SelectItem>
-                </SelectContent>
-              </Select>
             </div>
             <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="border rounded-lg p-4 relative border-dashed border-green-500">

@@ -118,8 +118,8 @@ const Login = () => {
           </h1>
           <p className="text-gray-600">
             {isLogin 
-              ? 'Sign in to your United Fillings account' 
-              : 'Join United Fillings for comprehensive business services'
+              ? 'Sign in to your United Filings account' 
+              : 'Join United Filings for comprehensive business services'
             }
           </p>
         </div>

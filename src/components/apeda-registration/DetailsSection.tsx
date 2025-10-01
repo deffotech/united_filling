@@ -55,12 +55,12 @@ const DetailsSection = () => {
             indispensable asset for Indian exporters.
           </p>
           <p className="mt-4">
-            United Fillings can help you obtain your APEDA Registration smoothly and
+            United Filings can help you obtain your APEDA Registration smoothly and
             efficiently, ensuring you meet all requirements with ease.
           </p>
           <p className="text-green-600 font-semibold mt-4">
             Ready to Expand Your Export Business? Get Your APEDA Registration
-            with United Fillings Today!
+            with United Filings Today!
           </p>
         </div>
 

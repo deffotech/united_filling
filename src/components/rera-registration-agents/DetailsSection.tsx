@@ -20,7 +20,7 @@ const DetailsSection = () => {
           legally.
         </p>
         <p>
-          By choosing United Fillings, you can navigate the RERA registration process
+          By choosing United Filings, you can navigate the RERA registration process
           easily, ensuring compliance with transparency, accountability, and
           efficiency requirements while safeguarding your interests in the real
           estate market.
@@ -305,12 +305,12 @@ const DetailsSection = () => {
         </p>
 
         <h2 className="text-xl font-semibold pt-4">
-          Streamline the RERA Registration Process with United Fillings
+          Streamline the RERA Registration Process with United Filings
         </h2>
         <p>
-          United Fillings can provide valuable assistance in obtaining RERA (Real Estate
+          United Filings can provide valuable assistance in obtaining RERA (Real Estate
           Regulatory Authority) registration in your chosen state. With our
-          expertise and knowledge of the regulatory requirements, United Fillings can
+          expertise and knowledge of the regulatory requirements, United Filings can
           guide real estate promoters and agents through the complex process of
           RERA registration.
         </p>

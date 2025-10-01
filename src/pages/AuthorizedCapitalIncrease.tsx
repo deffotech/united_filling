@@ -12,7 +12,7 @@ const AuthorizedCapitalIncrease = () => {
       <main className="container mx-auto px-4 py-8">
         <nav className="flex items-center space-x-1 text-sm text-gray-600 mb-6">
           <Link to="/" className="hover:text-green-600">
-            United Fillings
+            United Filings
           </Link>
           <ChevronRight className="h-4 w-4" />
           <Link to="/company-compliance" className="hover:text-green-600">
@@ -84,28 +84,10 @@ const AuthorizedCapitalIncrease = () => {
           </div>
 
           <div className="lg:col-span-1">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg text-green-600">
-                  Get Started
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-2">
-                    <Clock className="h-4 w-4 text-green-600" />
-                    <span className="text-sm">Processing Time: 20-30 days</span>
-                  </div>
-                  <Button className="w-full bg-green-600 hover:bg-green-700">
-                    Start Capital Increase
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </main>
-      <Footer />
+    
     </div>
   );
 };

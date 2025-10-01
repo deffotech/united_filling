@@ -1,12 +1,4 @@
 import { Star } from "lucide-react";
-
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
 
 const HeroSection = () => {
@@ -59,18 +51,10 @@ const HeroSection = () => {
           <span className="text-gray-600 ml-2 text-sm">(23158)</span>
         </div>
         <p className="mt-4 text-gray-600">
-          Secure your Trademark with United Fillings.com seamless filing. Covers
+          Secure your Trademark with United Filings.com seamless filing. Covers
           government fees for one class, ensuing hassle-free protection.
         </p>
         <div className="mt-6">
-          <Select>
-            <SelectTrigger className="w-full">
-              <SelectValue placeholder="TM Filing" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="tm-filing">TM Filing</SelectItem>
-            </SelectContent>
-          </Select>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <Card className="border-green-500 border-2">
@@ -89,8 +73,8 @@ const HeroSection = () => {
               
             </CardContent>
           </Card>
-          <Card className="border-green-500 border-2">
-            <CardContent className="p-4">
+          <Card className="border-green-500 border-auto">
+            <CardContent className="p-3">
               <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full inline-block">
                 1 Exclusive Offers
               </div>

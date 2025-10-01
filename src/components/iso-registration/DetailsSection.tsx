@@ -17,14 +17,14 @@ const DetailsSection = () => {
             operational effectiveness.
           </p>
           <p className="mt-4">
-            At United Fillings, we understand the critical importance of ISO certification
+            At United Filings, we understand the critical importance of ISO certification
             online for businesses looking to establish their mark in the
             industry. Our expert team is equipped to guide you through every
             step of the ISO certificate registration process, ensuring that your
             business meets all necessary standards with minimal hassle.
           </p>
           <p className="mt-4 font-semibold text-green-600">
-            Secure Your ISO Certification with United Fillings: Elevate Your Business
+            Secure Your ISO Certification with United Filings: Elevate Your Business
             Standards Today!
           </p>
         </div>
@@ -165,17 +165,17 @@ const DetailsSection = () => {
 
         <div>
           <h3 className="text-xl font-bold mb-2">
-            Simplify ISO Certification Help with United Fillings
+            Simplify ISO Certification Help with United Filings
           </h3>
           <p>
-            United Fillings has a team of experienced professionals who can provide
+            United Filings has a team of experienced professionals who can provide
             end-to-end support to businesses seeking ISO certification. We can
             help companies to save time, effort, and resources in the ISO
             certification process and ensure a smooth and hassle-free
             experience.
           </p>
           <p className="mt-4 font-semibold text-green-600">
-            Get Your ISO Certification Today with United Fillings and Boost Your Business
+            Get Your ISO Certification Today with United Filings and Boost Your Business
             Standards!
           </p>
         </div>

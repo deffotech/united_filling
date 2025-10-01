@@ -313,12 +313,12 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold text-gray-800 mb-2">
-          Streamline Section 8 Company Registration with United Fillings
+          Streamline Section 8 Company Registration with United Filings
         </h2>
         <p>
-          United Fillings is a trusted partner for entrepreneurs and organizations looking
+          United Filings is a trusted partner for entrepreneurs and organizations looking
           to obtain Section 8 company registration in India. With our expertise
-          and seamless online platform, United Fillings simplifies the complex process of
+          and seamless online platform, United Filings simplifies the complex process of
           registering a Section 8 company, ensuring that all legal formalities
           are met.
         </p>

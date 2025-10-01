@@ -15,7 +15,7 @@ const DetailsSection = () => {
           uniqueness and distinctiveness of your products and services.
         </p>
         <p className="text-gray-600 mb-4">
-          At United Fillings, we understand the paramount importance of brand registration
+          At United Filings, we understand the paramount importance of brand registration
           in India and ensuring the distinctiveness of your products and
           services in today's competitive market. That's why we offer expert
           assistance in filing for trademarks. Whether you're a dynamic startup,
@@ -24,7 +24,7 @@ const DetailsSection = () => {
           India online process.
         </p>
         <p className="text-gray-600">
-          Let United Fillings be your trusted partner, securing your brand's identity and
+          Let United Filings be your trusted partner, securing your brand's identity and
           protecting your intellectual property.
         </p>
       </div>
@@ -278,7 +278,7 @@ const DetailsSection = () => {
           It's essential to fix these issues to ensure your brand name gets
           registered without problems. This ensures your brand name follows the
           trademark law and isn't too similar to other brand names. With help
-          from United Fillings, dealing with these issues is easier, helping you get your
+          from United Filings, dealing with these issues is easier, helping you get your
           trademark registered smoothly.
         </p>
         <h3 className="text-xl font-bold mt-4 mb-2">
@@ -427,7 +427,7 @@ const DetailsSection = () => {
           which the trademark application is filed.
         </p>
         <p className="text-gray-600 mb-4">
-          United Fillings offers exclusive pricing for trademark applications filed
+          United Filings offers exclusive pricing for trademark applications filed
           through us!
         </p>
         <h3 className="text-xl font-bold mt-4 mb-2">
@@ -467,13 +467,13 @@ const DetailsSection = () => {
           </li>
         </ul>
         <h3 className="text-xl font-bold mt-4 mb-2">
-          United Fillings: Expert Assistance for Trademark Objections
+          United Filings: Expert Assistance for Trademark Objections
         </h3>
         <p className="text-gray-600 mb-4">
           Expansions can arise during the trademark registration process,
           demanding swift and effective management. If you are seeking adept
           guidance in addressing these objections and for end-to-end trademark
-          registration services, United Fillings is your ideal choice. Our expert team
+          registration services, United Filings is your ideal choice. Our expert team
           excels in handling the nuances of trademark objections, ensuring your
           responses to examination reports are comprehensive. With our expert
           advice, you boost your chances of bypassing these obstacles and
@@ -722,10 +722,10 @@ const DetailsSection = () => {
           </li>
         </ol>
         <h3 className="text-xl font-bold mt-4 mb-2">
-          How United Fillings can help you with Trademark Hearing
+          How United Filings can help you with Trademark Hearing
         </h3>
         <p className="text-gray-600 mb-4">
-          At United Fillings, we provide trademark hearing services to help businesses
+          At United Filings, we provide trademark hearing services to help businesses
           protect their valuable trademarks. Our team of experienced IP lawyers
           is dedicated to providing the highest quality legal service to ensure
           the trademark registration process goes smoothly with affordable
@@ -757,7 +757,7 @@ const DetailsSection = () => {
           professional guidance and representation.
         </p>
         <p className="text-gray-600 mb-4">
-          At United Fillings, we strive to provide our clients with the best possible
+          At United Filings, we strive to provide our clients with the best possible
           service with justifiable trademark hearing fees. Our IP lawyers are
           committed to providing the highest quality legal advice and
           representing our clients in trademark hearings. We work hard to ensure
@@ -776,7 +776,7 @@ const DetailsSection = () => {
           a trademark or even after its registration, if the applicant discovers
           minor errors or deems alterations necessary, they can initiate a
           rectification of trademark process with the Registrar to address these
-          issues. At United Fillings, we offer comprehensive Trademark Rectification
+          issues. At United Filings, we offer comprehensive Trademark Rectification
           services to guide clients through this vital aspect of trademark
           management.
         </p>
@@ -1046,14 +1046,14 @@ const DetailsSection = () => {
           removal.
         </p>
         <h3 className="text-xl font-bold mt-4 mb-2">
-          Why Choose United Fillings for Trademark Rectification?
+          Why Choose United Filings for Trademark Rectification?
         </h3>
         <p className="text-gray-600 mb-4">
-          United Fillings offers several compelling reasons for choosing our services:
+          United Filings offers several compelling reasons for choosing our services:
         </p>
         <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
           <li>
-            <strong>Comprehensive Legal and Financial Support:</strong> United Fillings is
+            <strong>Comprehensive Legal and Financial Support:</strong> United Filings is
             a platform that caters to all your legal and financial needs and
             connects you with experienced professionals.
           </li>
@@ -1063,16 +1063,16 @@ const DetailsSection = () => {
             hassle-free.
           </li>
           <li>
-            <strong>Expert Guidance:</strong> United Fillings' dedicated team of experts
+            <strong>Expert Guidance:</strong> United Filings' dedicated team of experts
             is readily available to answer your questions and guide you through
             the Trademark Rectification process.
           </li>
           <li>
-            <strong>Reliability and Trust:</strong> Clients can rely on United Fillings
+            <strong>Reliability and Trust:</strong> Clients can rely on United Filings
             for trustworthy, high-quality services.
           </li>
           <li>
-            <strong>Client-Centric Approach:</strong> United Fillings aims to create a
+            <strong>Client-Centric Approach:</strong> United Filings aims to create a
             user-friendly and efficient system for its clients.
           </li>
           <li>
@@ -1082,11 +1082,11 @@ const DetailsSection = () => {
         </ul>
         <p className="text-gray-600 mt-4">
           Trademark Rectification is a critical process to correct errors or
-          inaccuracies in trademark registration. United Fillings provides a valuable
+          inaccuracies in trademark registration. United Filings provides a valuable
           resource for navigating this process efficiently and effectively.
           Whether you require assistance with trademark registration,
-          rectification, renewal, or objection filing, United Fillings' team of
-          professionals is here to assist you. Feel free to reach out to United Fillings
+          rectification, renewal, or objection filing, United Filings' team of
+          professionals is here to assist you. Feel free to reach out to United Filings
           for any trademark-related queries or guidance.
         </p>
         <p className="text-sm text-gray-500 mt-4">Updated on: Mar 25, 2025</p>
@@ -1300,14 +1300,14 @@ const DetailsSection = () => {
           </li>
         </ol>
         <p className="text-gray-600 mt-4">
-          Our United Fillings expert-driven trademark renewal service helps you to renew
+          Our United Filings expert-driven trademark renewal service helps you to renew
           your trademark on time effortlessly!
         </p>
         <h3 className="text-xl font-bold mt-4 mb-2">
-          Streamline Trademark Renewal with United Fillings
+          Streamline Trademark Renewal with United Filings
         </h3>
         <p className="text-gray-600 mb-4">
-          United Fillings provides an all-encompassing trademark renewal service, ensuring
+          United Filings provides an all-encompassing trademark renewal service, ensuring
           a smooth and hassle-free experience for trademark owners.
         </p>
         <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
@@ -1330,7 +1330,7 @@ const DetailsSection = () => {
           </li>
         </ul>
         <p className="text-gray-600 mt-4">
-          With United Fillings' expert-assisted trademark renewal service, entrust us to
+          With United Filings' expert-assisted trademark renewal service, entrust us to
           effortlessly guide you through the intricate renewal steps and ensure
           unwavering protection for your invaluable trademarks.
         </p>
@@ -1338,11 +1338,11 @@ const DetailsSection = () => {
 
       <div>
         <h2 className="text-2xl font-bold mb-4">
-          How United Fillings Can Assist You with Trademark Registration
+          How United Filings Can Assist You with Trademark Registration
         </h2>
         <p className="text-gray-600 mb-4">
           Online trademark registration in India can be intricate, involving
-          numerous steps and government procedures. At United Fillings, we simplify this
+          numerous steps and government procedures. At United Filings, we simplify this
           process. Here's a breakdown of how we can assist you:
         </p>
         <h3 className="text-xl font-bold mt-4 mb-2">Trademark Search</h3>
@@ -1389,7 +1389,7 @@ const DetailsSection = () => {
         <p className="text-gray-600">
           We keep you informed about the status of your application and help you
           navigate any oppositions or hearings. After successful registration,
-          United Fillings can help with trademark renewal, trademark assignment,
+          United Filings can help with trademark renewal, trademark assignment,
           licensing, and any other post-registration services you may require.
         </p>
         <p className="text-gray-600 mt-4">
@@ -1397,10 +1397,10 @@ const DetailsSection = () => {
           my business name"? Are you ready to protect your brand and secure your
           trademark in India? Take the initial step in safeguarding your
           business identity by obtaining Trademark Registration or logo
-          trademark registration through United Fillings. Brand registration in India with
-          the help of United Fillings, you can rest assured that your brand is in capable
+          trademark registration through United Filings. Brand registration in India with
+          the help of United Filings, you can rest assured that your brand is in capable
           hands. Don't delay any longer ensure the validity and exclusivity of
-          your trademark today. Get started with United Fillings and safeguard your
+          your trademark today. Get started with United Filings and safeguard your
           valuable intellectual property rights.
         </p>
       </div>

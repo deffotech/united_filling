@@ -53,7 +53,7 @@ const EnterprisePartnership = () => {
               Enterprise Partnership Program
             </h2>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-              Partner with United Fillings to provide comprehensive business services to
+              Partner with United Filings to provide comprehensive business services to
               your clients. Our enterprise solutions are designed for accounting
               firms, consultants, and business service providers.
             </p>

@@ -17,12 +17,12 @@ const DetailsSection = () => {
           a company name includes a legal procedure demanding expert support.
         </p>
         <p>
-          Are you planning to change your company name? United Fillings offers expert
+          Are you planning to change your company name? United Filings offers expert
           guidance and seamless support for your company's name change process,
           ensuring legal compliance and ease of transition.
         </p>
         <p>
-          Contact United Fillings today to start reshaping your company's future identity!
+          Contact United Filings today to start reshaping your company's future identity!
         </p>
 
         <h3>Company Name Change</h3>
