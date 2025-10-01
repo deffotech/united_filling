@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Sidebar from '@/pages/sideBar';
+import Footer from '@/components/Footer';
 
 interface LayoutProps {
   children: ReactNode;
@@ -25,6 +26,7 @@ const Layout = ({ children, showSidebar = true }: LayoutProps) => {
           )}
         </main>
       </div>
+      <Footer />
     </div>
   );
 };
