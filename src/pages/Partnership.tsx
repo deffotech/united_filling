@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/partnership/Breadcrumb';
@@ -7,6 +6,7 @@ import DetailsSection from '@/components/partnership/DetailsSection';
 import ComparisonTable from '@/components/proprietorship/ComparisonTable';
 import PricingSection from '@/components/partnership/PricingSection';
 import DocumentsSection from '@/components/partnership/DocumentsSection';
+import Sidebar from '@/pages/sideBar';
 
 const Partnership = () => {
   return (
@@ -26,6 +26,7 @@ const Partnership = () => {
               <DocumentsSection />
             </div>
             <aside className="lg:col-span-4">
+              <Sidebar />
             </aside>
           </div>
         </main>
