@@ -14,7 +14,7 @@ import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 const HeroSection = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         <div className="md:col-span-4">
           <div className="relative">
             <img
@@ -57,7 +57,7 @@ const HeroSection = () => {
             client scope.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
             <Card className="border-green-200">
               <CardContent className="p-4">
                 <div className="text-xs font-bold text-green-600 mb-2">

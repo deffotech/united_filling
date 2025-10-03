@@ -8,7 +8,7 @@ const Sidebar = () => {
   const { items, removeFromCart, clearCart, totalItems, totalPrice } = useCart();
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 sticky top-24">
+    <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200 sticky top-24">
       {items.length === 0 ? (
         <div className="text-center">
           <ShoppingBag className="mx-auto h-12 w-12 text-gray-400" />
@@ -53,7 +53,7 @@ const Sidebar = () => {
         </div>
       )}
 
-      <div className="mt-6 text-sm text-center">
+      <div className="mt-4 text-sm text-center">
         <span className="text-gray-600">Existing User? </span>
         <Link to="/auth" className="font-medium text-green-600 hover:text-green-700">Login</Link>
       </div>
