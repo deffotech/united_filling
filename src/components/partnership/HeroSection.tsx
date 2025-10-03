@@ -57,9 +57,9 @@ const HeroSection = () => {
             client scope.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
-            <Card className="border-green-200">
-              <CardContent className="p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+            <Card className="border-green-200 h-full">
+              <CardContent className="p-4 flex flex-col h-full">
                 <div className="text-xs font-bold text-green-600 mb-2">
                   2 Exclusive Offers
                 </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
                     LEDGERS Software - 1 Year
                   </li>
                 </ul>
-               <div className="flex gap-2 mt-4">
+               <div className="flex gap-2 mt-auto pt-4">
                   <AddToCartButton
                     serviceId="Andaman and Nicobar Islands"
                     serviceName="Andaman and Nicobar Islands"
@@ -108,8 +108,8 @@ const HeroSection = () => {
                 </div>
               </CardContent>
             </Card>
-            <Card className="border-green-200">
-              <CardContent className="p-4">
+            <Card className="border-green-200 h-full">
+              <CardContent className="p-4 flex flex-col h-full">
                 <div className="text-xs font-bold text-green-600 mb-2">
                   2 Exclusive Offers
                 </div>
@@ -140,7 +140,7 @@ const HeroSection = () => {
                     LEDGERS Software - 1 Year
                   </li>
                </ul>
-                <div className="flex gap-2 mt-4">
+                <div className="flex gap-2 mt-auto pt-4">
                   <AddToCartButton
                     serviceId="Arunachal Pradesh"
                     serviceName="Arunachal Pradesh"
