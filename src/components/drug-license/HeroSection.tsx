@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Star, ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -54,12 +55,22 @@ const HeroSection = () => {
                   Process & Pricing Finalisation
                 </li>
               </ul>
-              <Button
-                variant="outline"
-                className="w-full mt-4 border-green-600 text-green-600 hover:bg-green-50 hover:text-green-700"
-              >
-                ADD
-              </Button>
+              <div className="flex gap-2 mt-4">
+                <AddToCartButton
+                  serviceId="Drug License Consultation"
+                  serviceName="Drug License Consultation - Chennai"
+                  price={2999}
+                  className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹2,999
+                </AddToCartButton>
+                <AddToWishlistButton
+                  serviceId="Drug License Consultation"
+                  serviceName="Drug License Consultation - Chennai"
+                  price={2999}
+                />
+              </div>
             </CardContent>
           </Card>
 

@@ -1,6 +1,8 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -34,7 +36,22 @@ const HeroSection = () => {
                 <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />Darpan Number</li>
                 <li className="flex items-center"><ChevronRight className="h-4 w-4 mr-1 text-green-500" />Darpan Certificate</li>
               </ul>
-          
+              <div className="flex gap-2 mt-4">
+                <AddToCartButton
+                  serviceId="Darpan Registration"
+                  serviceName="Darpan Registration"
+                  price={2999}
+                  className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹2,999
+                </AddToCartButton>
+                <AddToWishlistButton
+                  serviceId="Darpan Registration"
+                  serviceName="Darpan Registration"
+                  price={2999}
+                />
+              </div>
             </CardContent>
           </Card>
           

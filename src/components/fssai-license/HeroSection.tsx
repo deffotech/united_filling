@@ -113,8 +113,11 @@ const HeroSection = () => {
                     serviceId="fssai-state-license-trader"
                     serviceName="FSSAI State License - Trader, Restaurant - 1 Year"
                     price={4999}
-                    className="flex-1"
-                  />
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹4,999
+                  </AddToCartButton>
                   <AddToWishlistButton 
                     serviceId="fssai-state-license-trader"
                     serviceName="FSSAI State License - Trader, Restaurant - 1 Year"
@@ -155,8 +158,11 @@ const HeroSection = () => {
                     serviceId="fssai-state-license-manufacturer"
                     serviceName="FSSAI State License - Manufacturer, Re labeler, Re packer - 1 Year"
                     price={6999}
-                    className="flex-1"
-                  />
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹6,999
+                  </AddToCartButton>
                   <AddToWishlistButton 
                     serviceId="fssai-state-license-manufacturer"
                     serviceName="FSSAI State License - Manufacturer, Re labeler, Re packer - 1 Year"

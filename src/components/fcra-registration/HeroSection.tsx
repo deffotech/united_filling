@@ -36,7 +36,7 @@ const HeroSection = () => {
                 className="bg-green-600 hover:bg-green-700"
                 onClick={handleAddToCart}
               >
-                Add to Cart - ₹50,000
+                ADD TO CART - ₹50,000
               </Button>
               <Button size="lg" variant="outline">
                 Talk to Expert
