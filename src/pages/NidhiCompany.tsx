@@ -6,18 +6,23 @@ import PricingSection from '@/components/nidhi-company/PricingSection';
 
 const NidhiCompany = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <main className="container mx-auto px-4 py-6">
-        <Breadcrumb />
-        <div className="mt-6 space-y-8">
-          <HeroSection />
-          <PricingSection/>
-          <DetailsSection />
-          <DocumentsSection />
-          
-        </div>
-      </main>
-          
+    
+    <div className="bg-white min-h-screen">
+      <div className="bg-gray-50/50">
+        <main className="max-w-screen-xl mx-auto px-4 py-6">
+          <Breadcrumb />
+           <div>
+            <div className="lg:col-span-8 space-y-8">
+              <HeroSection />
+              <PricingSection />
+             
+              <DetailsSection />
+              
+            </div>
+           
+          </div>
+        </main>
+  </div>
     </div>
   );
 };

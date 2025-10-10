@@ -16,7 +16,7 @@ const StartupIndia = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="grid grid-cols-12 gap-8 mt-4">
+          <div >
             <div className="col-span-12 lg:col-span-9">
               <HeroSection />
            

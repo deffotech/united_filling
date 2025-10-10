@@ -10,8 +10,8 @@ const ProducerCompany = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
-            <div className="lg:col-span-2 space-y-8">
+          <div >
+            <div>
               <HeroSection />
               <DetailsSection />
             </div>

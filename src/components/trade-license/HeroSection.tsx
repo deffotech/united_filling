@@ -1,15 +1,7 @@
-import { Button } from "@/components/ui/button";
+
 import { Card, CardContent } from "@/components/ui/card";
 import AddToCartButton from "@/components/ui/AddToCartButton";
 import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
-
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Star, ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
@@ -53,18 +45,6 @@ const HeroSection = () => {
             Trade license is mandatory for businesses operating in a commercial
             property. Easily apply for Trade License online using IndiaFilings.
           </p>
-          <div className="mt-6">
-            <Select defaultValue="chennai">
-              <SelectTrigger className="w-full md:w-1/2">
-                <SelectValue placeholder="Select City" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="chennai">Chennai</SelectItem>
-                <SelectItem value="telangana">Telangana</SelectItem>
-                <SelectItem value="mumbai">Mumbai</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <Card className="border-dashed border-green-500">

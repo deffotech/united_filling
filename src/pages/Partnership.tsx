@@ -13,7 +13,7 @@ const Partnership = () => {
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-4">
+          <div>
             <div className="lg:col-span-8 space-y-6">
               <HeroSection />
               <DetailsSection />
@@ -23,9 +23,9 @@ const Partnership = () => {
               </div>
               <DocumentsSection />
             </div>
-            <aside className="lg:col-span-4">
+            {/* <aside className="lg:col-span-4">
               <Sidebar />
-            </aside>
+            </aside> */}
           </div>
         </main>
       </div>

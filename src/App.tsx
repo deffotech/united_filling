@@ -38,6 +38,11 @@ import FSSAiLicense from "./pages/FSSAiLicense";
 import HalalCertification from "./pages/HalalCertification";
 import IcegateRegistration from "./pages/IcegateRegistration";
 import ImportExportCode from "./pages/ImportExportCode";
+import Society from "./pages/Society";
+import SetupBusinessInUAE from "./pages/SetupBusinessInUAE";
+import SetupBusinessInUSA from "./pages/SetupBusinessInUSA";
+import SetupBusinessInSingapore from "./pages/SetupBusinessInSingapore";
+import SetupBusinessInUK from "./pages/SetupBusinessInUK";
 import TrademarkRegistration from "./pages/TrademarkRegistration";
 import CopyrightRegistration from "./pages/CopyrightRegistration";
 import PatentRegistration from "./pages/PatentRegistration";
@@ -163,25 +168,14 @@ function App() {
               <Route path="/halal-certification" element={<Layout><HalalCertification /></Layout>} />
               <Route path="/icegate-registration" element={<Layout><IcegateRegistration /></Layout>} />
               <Route path="/import-export-code" element={<Layout><ImportExportCode /></Layout>} />
-              {/* <Route path="/society-registration" element={<SocietyRegistration />} /> */}
-               <Route path="/setup-business-uae" element={<Layout><div className="min-h-screen bg-gray-50 flex items-center justify-center">
-                 <div className="text-center">
-                   <h1 className="text-3xl font-bold text-gray-900 mb-4">Setup Business in UAE</h1>
-                   <p className="text-gray-600 mb-6">This page is under development. Coming soon!</p>
-                   <a href="/consultation" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-                     Contact Us for Details
-                   </a>
-                 </div>
-               </div></Layout>} />
-              <Route path="/setup-business-usa" element={<Layout><div className="min-h-screen bg-gray-50 flex items-center justify-center">
-                <div className="text-center">
-                  <h1 className="text-3xl font-bold text-gray-900 mb-4">Setup Business in USA</h1>
-                  <p className="text-gray-600 mb-6">This page is under development. Coming soon!</p>
-                  <a href="/consultation" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-                    Contact Us for Details
-                  </a>
-                </div>
-              </div></Layout>} />
+              <Route path="/society" element={<Layout><Society /></Layout>} />
+              <Route path="/society-registration" element={<Layout><Society /></Layout>} />
+              <Route path="/setup-business-uae" element={<Layout><SetupBusinessInUAE /></Layout>} />
+              <Route path="/setup-business-usa" element={<Layout><SetupBusinessInUSA /></Layout>} />
+              <Route path="/setup-business-in-usa" element={<Layout><SetupBusinessInUSA /></Layout>} />
+              <Route path="/setup-business-in-singapore" element={<Layout><SetupBusinessInSingapore /></Layout>} />
+              <Route path="/setup-business-in-uk" element={<Layout><SetupBusinessInUK /></Layout>} />
+              <Route path="/setup-business-usa" element={<Layout><SetupBusinessInUSA /></Layout>} />
               
               {/* Trademark Routes */}
               <Route path="/trademark-registration" element={<Layout><TrademarkRegistration /></Layout>} />
