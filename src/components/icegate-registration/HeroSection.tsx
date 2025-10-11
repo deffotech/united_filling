@@ -39,10 +39,7 @@ const HeroSection = () => {
               holders), IEC holders (and IEC authorised persons), Shipping
               Lines, Shipping agents, Airlines, Air Agents, Console Agents etc.
             </p>
-            <div className="border rounded-md p-3 flex justify-between items-center">
-              <span>ICEGATE Registration</span>
-              <ChevronDown className="w-5 h-5" />
-            </div>
+          
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <Card className="border-dashed border-green-500">

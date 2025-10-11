@@ -3,13 +3,7 @@ import { Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AddToCartButton from "@/components/ui/AddToCartButton";
 import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 
 const HeroSection = () => {
   return (
@@ -54,18 +48,7 @@ const HeroSection = () => {
               transactions. Get your Legal Entity Identifier Code quickly and
               easily with United Filings.
             </p>
-
-            <Select defaultValue="1">
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Select Year" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="1">1 Year</SelectItem>
-                <SelectItem value="3">3 Years</SelectItem>
-                <SelectItem value="5">5 Years</SelectItem>
-              </SelectContent>
-            </Select>
-
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <Card className="border-dashed border-green-500">
                 <CardContent className="p-4 space-y-3">

@@ -1,13 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight, CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
+
 
 const HeroSection = () => {
   return (
@@ -54,20 +49,6 @@ const HeroSection = () => {
               global standards of quality assurance, manufacturing and business.
             </p>
 
-            <Select defaultValue="non-audited">
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Select Certification Type" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="non-audited">
-                  Non-Audited - ISO 9001:2018
-                </SelectItem>
-                <SelectItem value="audited">
-                  Audited - ISO 14001:2018
-                </SelectItem>
-              </SelectContent>
-            </Select>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <Card className="border-dashed border-green-500">
                 <CardContent className="p-4 space-y-3">
@@ -98,6 +79,22 @@ const HeroSection = () => {
                       100% Refund Guarantee
                     </li>
                   </ul>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Non - Audited - ISO 9001:2018"
+                      serviceName="Non - Audited - ISO 9001:2018"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Non - Audited - ISO 9001:2018"
+                      serviceName="Non - Audited - ISO 9001:2018"
+                      price={2999}
+                    />
+                  </div>
                  
                  
                 </CardContent>
@@ -131,6 +128,22 @@ const HeroSection = () => {
                       100% Refund Guarantee
                     </li>
                   </ul>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Audited - ISO 14001:2018"
+                      serviceName="Audited - ISO 14001:2018"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Audited - ISO 14001:2018"
+                      serviceName="Audited - ISO 14001:2018"
+                      price={2999}
+                    />
+                  </div>
                 
                 </CardContent>
               </Card>
