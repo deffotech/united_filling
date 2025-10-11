@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Breadcrumb from "@/components/demat-of-shares/Breadcrumb";
 import HeroSection from "@/components/demat-of-shares/HeroSection";
 import DetailsSection from "@/components/demat-of-shares/DetailsSection";

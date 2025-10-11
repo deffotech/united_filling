@@ -1,5 +1,3 @@
-
-import Header from "@/components/Header";
 import Breadcrumb from "@/components/gst-revocation/Breadcrumb";
 import HeroSection from "@/components/gst-revocation/HeroSection";
 import DetailsSection from "@/components/gst-revocation/DetailsSection";
@@ -10,9 +8,9 @@ const GstRevocation = () => {
   return (
     <div className="bg-white">
      
-      <main className="max-w-screen-xl mx-auto px-4 py-8 md:px-8 lg:px-16">
+      <main className="max-w-screen-xl mx-auto pb-8 md:px-8 lg:px-5">
         <Breadcrumb />
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
+        <div>
           <div className="lg:col-span-2 space-y-8">
             <HeroSection />
             <DetailsSection />

@@ -753,12 +753,6 @@ const Header = () => {
                             Drug License
                           </Link>
                           <Link
-                            to="/udyam-registration"
-                            className="text-gray-600 hover:text-green-600"
-                          >
-                            Udyam Registration
-                          </Link>
-                          <Link
                             to="/fcra-registration"
                             className="text-gray-600 hover:text-green-600"
                           >

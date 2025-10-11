@@ -1,6 +1,8 @@
 
 import { Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
     return (
@@ -40,7 +42,22 @@ const HeroSection = () => {
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Documentation & GST Advisory</span></li>
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Support Until Approval</span></li>
                             </ul>
-                            <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
+                                 <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Basic gst-amendment"
+                      serviceName="Basic gst-amendment"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Basic gst-amendment"
+                      serviceName="Basic gst-amendment"
+                      price={2999}
+                    />
+                  </div>
                         </div>
                     </div>
                 </div>

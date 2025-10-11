@@ -1,10 +1,18 @@
+import Breadcrumb from "@/components/remove-director/Breadcrumb";
+import HeroSection from "@/components/remove-director/HeroSection";
+import DetailsSection from "@/components/remove-director/DetailsSection";
+import DocumentsSection from "@/components/remove-director/DocumentsSection";
+
 const RemoveDirector = () => {
   return (
-    <div className="min-h-screen py-12">
-      <div className="max-w-4xl mx-auto px-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Remove Director</h1>
-        <p className="text-lg text-gray-600">Guidance and services to remove a director from a company. Content coming soon.</p>
+    <div className="min-h-screen bg-gray-50">
+  
+      <div className="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <Breadcrumb />
       </div>
+      <HeroSection />
+      <DetailsSection />
+  <DocumentsSection />
     </div>
   );
 };

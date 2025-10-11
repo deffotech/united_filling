@@ -1,12 +1,22 @@
+import Breadcrumb from '@/components/dormant-status-filing/Breadcrumb';
+import HeroSection from '@/components/dormant-status-filing/HeroSection';
+import DetailsSection from '@/components/dormant-status-filing/DetailsSection';
+import DocumentsSection from '@/components/dormant-status-filing/DocumentsSection';
+import { Button } from '@/components/ui/button';
+import { MessageSquare } from 'lucide-react';
+
 const DormantStatusFiling = () => {
   return (
-    <div className="min-h-screen py-12">
-      <div className="max-w-4xl mx-auto px-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Dormant Status Filing</h1>
-        <p className="text-lg text-gray-600">Information on applying for dormant status for companies and LLPs. Content coming soon.</p>
-      </div>
-    </div>
+    <>
+      <Breadcrumb />
+      <HeroSection />
+      <DetailsSection />
+      <DocumentsSection />
+      <Button className="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg h-16 w-auto px-6 text-lg z-50">
+        <MessageSquare className="mr-3 h-6 w-6" />
+        Live Chat with Experts
+      </Button>
+    </>
   );
 };
-
 export default DormantStatusFiling;

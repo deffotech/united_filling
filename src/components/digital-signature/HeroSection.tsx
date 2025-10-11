@@ -1,12 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Usb } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import AddToCartButton from "@/components/ui/AddToCartButton";
 import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
@@ -48,15 +41,6 @@ const HeroSection = () => {
             Certifying Authority.
           </p>
 
-          <Select defaultValue="individual">
-            <SelectTrigger className="w-full md:w-[280px]">
-              <SelectValue placeholder="Select type" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="individual">Individual</SelectItem>
-              <SelectItem value="company">Company</SelectItem>
-            </SelectContent>
-          </Select>
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card className="border-orange-200">
@@ -70,7 +54,7 @@ const HeroSection = () => {
                   <li>&gt; DSC Downloading</li>
                   <li>&gt; Shipping & Handling</li>
                 </ul>
-                <div className="flex gap-2 mt-4">
+                <div className="flex mt-4">
                   <AddToCartButton 
                     serviceId="digital-signature-individual"
                     serviceName="Digital Signature - Individual"
@@ -99,7 +83,7 @@ const HeroSection = () => {
                   <li>&gt; DSC Downloading</li>
                   <li>&gt; Shipping & Handling</li>
                 </ul>
-                <div className="flex gap-2 mt-4">
+                <div className="flex mt-4">
                   <AddToCartButton 
                     serviceId="digital-signature-company"
                     serviceName="Digital Signature - Company"

@@ -1,14 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import AddToCartButton from "@/components/ui/AddToCartButton";
 import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
-
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Star, ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
@@ -39,17 +31,6 @@ const HeroSection = () => {
             charitable organization with United Filings and allow donors to claim tax
             deductions.
           </p>
-          <Select defaultValue="12a">
-            <SelectTrigger className="w-full md:w-2/3">
-              <SelectValue placeholder="Select Registration" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="12a">12A Registration</SelectItem>
-              <SelectItem value="80g">80G Registration</SelectItem>
-              <SelectItem value="both">12A and 80G Registration</SelectItem>
-            </SelectContent>
-          </Select>
-
           <div className="grid md:grid-cols-2 gap-6 mt-6">
             <Card className="border-green-200">
               <CardContent className="p-4">

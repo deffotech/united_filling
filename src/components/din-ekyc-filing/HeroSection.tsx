@@ -1,11 +1,4 @@
 import { Star, ChevronRight } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 const HeroSection = () => {
   return (
