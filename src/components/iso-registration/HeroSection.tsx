@@ -3,7 +3,6 @@ import { Star, ChevronRight, CheckCircle } from "lucide-react";
 import AddToCartButton from "@/components/ui/AddToCartButton";
 import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
-
 const HeroSection = () => {
   return (
     <Card>
@@ -76,6 +75,7 @@ const HeroSection = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />
+
                       100% Refund Guarantee
                     </li>
                   </ul>
@@ -98,6 +98,28 @@ const HeroSection = () => {
                  
                  
                 </CardContent>
+
+                    100% Refund Guarantee
+                  </li>
+                </ul>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="ISO 9001:2018"
+                    serviceName="Non - Audited - ISO 9001:2018"
+                    price={15999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹15,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="ISO 9001:2018"
+                    serviceName="Non - Audited - ISO 9001:2018"
+                    price={15999}
+                  />
+                </div>
+              </CardContent>
+
               </Card>
               <Card className="border-dashed border-green-500">
                 <CardContent className="p-4 space-y-3">
@@ -125,6 +147,7 @@ const HeroSection = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />
+
                       100% Refund Guarantee
                     </li>
                   </ul>
@@ -146,6 +169,7 @@ const HeroSection = () => {
                   </div>
                 
                 </CardContent>
+
               </Card>
             </div>
             <div className="flex justify-between text-sm text-blue-600 mt-4">

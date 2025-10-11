@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -56,7 +58,22 @@ const HeroSection = () => {
                     100% Refund Guarantee
                   </li>
                 </ul>
-              
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="BIS Consultation"
+                    serviceName="BIS Consultation"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="BIS Consultation"
+                    serviceName="BIS Consultation"
+                    price={2999}
+                  />
+                </div>
               </div>
               <div className="border rounded-lg p-4 relative">
                 <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full absolute top-2 right-2">
@@ -81,7 +98,22 @@ const HeroSection = () => {
                     BIS Certification
                   </li>
                 </ul>
-               
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="BIS Certification"
+                    serviceName="BIS Certification"
+                    price={25000}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹25,000
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="BIS Certification"
+                    serviceName="BIS Certification"
+                    price={25000}
+                  />
+                </div>
               </div>
             </div>
             <div className="flex justify-between mt-6 text-sm">

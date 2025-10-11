@@ -72,23 +72,24 @@ const HeroSection = () => {
                     PF Number
                   </li>
                 </ul>
-                 <div className="flex gap-2 mt-4">
-                    <AddToCartButton
-                      serviceId="PF Registration"
-                      serviceName="PF Registration"
-                      price={2999}
-                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
-                      variant="outline"
-                    >
-                      ADD TO CART - ₹2,999
-                    </AddToCartButton>
-                    <AddToWishlistButton
-                      serviceId="PF Registration"
-                      serviceName="PF Registration"
-                      price={2999}
-                    />
-                  </div>
-              
+
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="PF Registration"
+                    serviceName="PF Registration"
+                    price={3999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹3,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="PF Registration"
+                    serviceName="PF Registration"
+                    price={3999}
+                  />
+                </div>
+
               </CardContent>
             </Card>
 

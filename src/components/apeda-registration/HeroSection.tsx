@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -56,7 +58,22 @@ const HeroSection = () => {
                   RCMC Certificate
                 </li>
               </ul>
-           
+              <div className="flex gap-2 mt-4">
+                <AddToCartButton
+                  serviceId="APEDA Registration"
+                  serviceName="APEDA Registration"
+                  price={5999}
+                  className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹5,999
+                </AddToCartButton>
+                <AddToWishlistButton
+                  serviceId="APEDA Registration"
+                  serviceName="APEDA Registration"
+                  price={5999}
+                />
+              </div>
             </div>
 
             <div className="flex justify-between mt-6 text-sm">

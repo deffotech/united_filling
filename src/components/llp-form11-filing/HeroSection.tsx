@@ -28,7 +28,7 @@ const HeroSection = () => {
               size="lg" 
               className="bg-white text-green-600 hover:bg-gray-100"
             >
-              Start Filing - ₹2,999
+              ADD TO CART - ₹2,999
             </Button>
             <Button 
               variant="outline" 

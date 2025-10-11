@@ -75,8 +75,11 @@ const HeroSection = () => {
                     serviceId="digital-signature-individual"
                     serviceName="Digital Signature - Individual"
                     price={1499}
-                    className="flex-1"
-                  />
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹1,499
+                  </AddToCartButton>
                   <AddToWishlistButton 
                     serviceId="digital-signature-individual"
                     serviceName="Digital Signature - Individual"
@@ -101,8 +104,11 @@ const HeroSection = () => {
                     serviceId="digital-signature-company"
                     serviceName="Digital Signature - Company"
                     price={2499}
-                    className="flex-1"
-                  />
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,499
+                  </AddToCartButton>
                   <AddToWishlistButton 
                     serviceId="digital-signature-company"
                     serviceName="Digital Signature - Company"

@@ -1,6 +1,8 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 
 const HeroSection = () => {
@@ -37,7 +39,22 @@ const HeroSection = () => {
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Allotment Number</li>
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Login credentials</li>
                 </ul>
-              
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Barcode Registration Basic"
+                    serviceName="Barcode Registration - Basic"
+                    price={4999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹4,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Barcode Registration Basic"
+                    serviceName="Barcode Registration - Basic"
+                    price={4999}
+                  />
+                </div>
               </div>
               <div className="border rounded-lg p-4 relative border-dashed border-green-500">
                 <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full absolute top-2 right-2">2 Exclusive Offers</div>
@@ -48,7 +65,22 @@ const HeroSection = () => {
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Allotment Number</li>
                   <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">&gt;</span> Barcode Login credentials</li>
                 </ul>
-             
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Barcode Registration Standard"
+                    serviceName="Barcode Registration - Standard"
+                    price={6999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹6,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Barcode Registration Standard"
+                    serviceName="Barcode Registration - Standard"
+                    price={6999}
+                  />
+                </div>
               </div>
             </div>
             <div className="flex justify-between mt-6 text-sm">

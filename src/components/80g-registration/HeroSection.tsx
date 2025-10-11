@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -52,7 +54,22 @@ const HeroSection = () => {
                   80G Certificate
                 </li>
               </ul>
-             
+              <div className="flex gap-2 mt-4">
+                <AddToCartButton
+                  serviceId="80G Registration"
+                  serviceName="80G Registration"
+                  price={15999}
+                  className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹15,999
+                </AddToCartButton>
+                <AddToWishlistButton
+                  serviceId="80G Registration"
+                  serviceName="80G Registration"
+                  price={15999}
+                />
+              </div>
             </CardContent>
           </Card>
 
