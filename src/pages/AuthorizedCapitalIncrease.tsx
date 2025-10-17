@@ -21,7 +21,7 @@ const AuthorizedCapitalIncrease = () => {
           <span className="text-gray-900">Authorized Capital Increase</span>
         </nav>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="gap-8">
           <div className="lg:col-span-2">
             <Card className="mb-8">
               <CardHeader>

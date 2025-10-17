@@ -24,8 +24,6 @@ const LLP = () => {
               </div>
               
             </div>
-            {/* <aside className="lg:col-span-4">
-            </aside> */}
           </div>
         </main>
   </div>

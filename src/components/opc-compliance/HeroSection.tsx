@@ -1,4 +1,6 @@
 import { Star, ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -56,7 +58,22 @@ const HeroSection = () => {
                 Commencement of Business
               </li>
             </ul>
-           
+           <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="OPC Compliance-Basic"
+                      serviceName="OPC Compliance-Basic"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="OPC Compliance-Basic"
+                      serviceName="OPC Compliance-Basic"
+                      price={2999}
+                    />
+                  </div>
           </div>
 
           <div className="flex justify-between items-center mt-4 text-blue-600 border-b pb-4">

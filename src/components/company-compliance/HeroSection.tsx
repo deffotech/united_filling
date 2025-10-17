@@ -1,12 +1,5 @@
 
 import { Star } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 
 const HeroSection = () => {
   return (
@@ -34,15 +27,6 @@ const HeroSection = () => {
           <p className="text-gray-600 mt-4 mb-6">
             Maintain accounts, MCA and Income Tax compliance for your company with dedicated Accountant and LEDGERS platform.
           </p>
-          <Select defaultValue="company_basic">
-            <SelectTrigger className="w-full">
-              <SelectValue placeholder="Select a service" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="company_basic">Company Basic</SelectItem>
-              <SelectItem value="tds_filings">TDS Filings 2 year</SelectItem>
-            </SelectContent>
-          </Select>
         </div>
       </div>
     </div>
