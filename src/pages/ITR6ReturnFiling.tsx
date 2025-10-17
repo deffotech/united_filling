@@ -8,9 +8,9 @@ const ITR6ReturnFiling = () => {
   return (
     <div className="bg-white">
      
-      <main className="px-4 py-8 md:px-8 lg:px-16">
+      <main className="px-4 py-8 md:px-8 lg:px-10">
         <Breadcrumb />
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
+        <div className="mt-8">
           <div className="lg:col-span-2 space-y-8">
             <HeroSection />
             <DetailsSection />

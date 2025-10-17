@@ -42,7 +42,7 @@ const HeroSection = () => {
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Documentation & GST Advisory</span></li>
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Support Until Approval</span></li>
                             </ul>
-                                 <div className="flex gap-2 mt-4">
+                <div className="flex gap-2 mt-4">
                     <AddToCartButton
                       serviceId="Basic gst-amendment"
                       serviceName="Basic gst-amendment"
@@ -57,7 +57,7 @@ const HeroSection = () => {
                       serviceName="Basic gst-amendment"
                       price={2999}
                     />
-                  </div>
+                </div>
                         </div>
                     </div>
                 </div>

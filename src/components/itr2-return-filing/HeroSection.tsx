@@ -6,7 +6,7 @@ import { Star, TrendingUp, Home, Globe, Building } from "lucide-react";
 const HeroSection = () => {
   return (
     <Card className="overflow-hidden">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="gap-6">
         <div className="bg-blue-600 p-8 text-white">
           <h1 className="text-3xl font-bold mb-4">ITR-2 Return Filing</h1>
           <p className="text-blue-100 mb-6">

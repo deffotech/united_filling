@@ -12,7 +12,7 @@ const ITR1ReturnFiling = () => {
     <div className="bg-gray-50 min-h-screen">
       <main className="px-4 py-8 md:px-8 lg:px-16">
         <Breadcrumb />
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">
+        <div className=" gap-8 mt-8">
           <div className="lg:col-span-3 space-y-8">
             <HeroSection />
             <DetailsSection />

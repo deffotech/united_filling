@@ -35,7 +35,7 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <Card className="border-green-500 border-2">
+          <Card className="border rounded-lg shadow-sm bg-stone-50 border-dashed border-orange-400">
             <CardContent className="p-4">
               <div className="text-center bg-green-100 text-green-700 text-xs font-bold py-1 px-2 rounded-full mb-3 inline-block">
                 2 Exclusive Offers
@@ -79,7 +79,7 @@ const HeroSection = () => {
                   </div>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="border rounded-lg shadow-sm bg-stone-50 border-dashed border-orange-400">
             <CardContent className="p-4">
               <div className="text-center bg-green-100 text-green-700 text-xs font-bold py-1 px-2 rounded-full mb-3 inline-block">
                 2 Exclusive Offers
