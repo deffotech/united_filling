@@ -2,16 +2,16 @@ import { Star, ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white">
-      <div className="grid lg:grid-cols-2 gap-8 items-start">
-        <div>
+    <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="md:col-span-4">
           <img
             src="/lovable-uploads/cf8e8f5e-ca90-481e-a896-30d551e0e4c0.png"
             alt="LLP Compliance"
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg w-full h-auto object-cover"
           />
         </div>
-        <div className="p-1">
+        <div className="md:col-span-8">
           <h1 className="text-3xl font-bold text-gray-800">LLP Compliance</h1>
           <div className="flex items-center my-2">
             {[...Array(5)].map((_, i) => (
@@ -65,7 +65,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
