@@ -257,64 +257,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right side visual design */}
-            <div className="flex-1 flex justify-center lg:justify-end items-center order-1 lg:order-2">
-              <div className="relative w-full max-w-sm lg:max-w-md">
-                {/* Modern card design instead of image */}
-                <div className="bg-white rounded-xl shadow-2xl p-4 md:p-6 lg:p-8 w-full">
-                  <div className="text-center mb-4 md:mb-6">
-                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-full mx-auto mb-3 md:mb-4 flex items-center justify-center">
-                      <FileText className="h-6 w-6 md:h-8 md:w-8 text-white" />
-                    </div>
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900">
-                      Professional Services
-                    </h3>
-                    <p className="text-gray-600 text-xs md:text-sm">
-                      Trusted by businesses nationwide
-                    </p>
-                  </div>
-
-                  {/* Stats */}
-                  <div className="grid grid-cols-2 gap-2 md:gap-4 mb-4 md:mb-6">
-                    <div className="text-center">
-                      <div className="flex items-center justify-center mb-1 md:mb-2">
-                        <Users className="h-4 w-4 md:h-5 md:w-5 text-green-600 mr-1" />
-                        <span className="text-base md:text-lg font-bold text-gray-900">
-                          10L+
-                        </span>
-                      </div>
-                      <p className="text-xs text-gray-600">Happy Clients</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="flex items-center justify-center mb-1 md:mb-2">
-                        <Award className="h-4 w-4 md:h-5 md:w-5 text-blue-600 mr-1" />
-                        <span className="text-base md:text-lg font-bold text-gray-900">
-                          99%
-                        </span>
-                      </div>
-                      <p className="text-xs text-gray-600">Success Rate</p>
-                    </div>
-                  </div>
-
-                  {/* App download section */}
-                  <div className="bg-gray-50 p-3 md:p-4 rounded-lg">
-                    <p className="text-gray-800 text-xs md:text-sm font-medium mb-2 md:mb-3 text-center">
-                      Download our App
-                    </p>
-                    <div className="flex flex-col space-y-1 md:space-y-2">
-                      <div className="flex items-center justify-center space-x-2 bg-black text-white px-3 md:px-4 py-1.5 md:py-2 rounded-lg text-xs hover:bg-gray-800 transition-colors cursor-pointer">
-                        <Download className="h-3 w-3 md:h-4 md:w-4" />
-                        <span>Google Play</span>
-                      </div>
-                      <div className="flex items-center justify-center space-x-2 bg-black text-white px-3 md:px-4 py-1.5 md:py-2 rounded-lg text-xs hover:bg-gray-800 transition-colors cursor-pointer">
-                        <Download className="h-3 w-3 md:h-4 md:w-4" />
-                        <span>App Store</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             {/* Right Arrow */}
             <button
