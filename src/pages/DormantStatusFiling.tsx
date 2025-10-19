@@ -2,20 +2,18 @@ import Breadcrumb from '@/components/dormant-status-filing/Breadcrumb';
 import HeroSection from '@/components/dormant-status-filing/HeroSection';
 import DetailsSection from '@/components/dormant-status-filing/DetailsSection';
 import DocumentsSection from '@/components/dormant-status-filing/DocumentsSection';
-import { Button } from '@/components/ui/button';
-import { MessageSquare } from 'lucide-react';
 
 const DormantStatusFiling = () => {
   return (
     <>
-      <Breadcrumb />
-      <HeroSection />
-      <DetailsSection />
-      <DocumentsSection />
-      <Button className="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg h-16 w-auto px-6 text-lg z-50">
-        <MessageSquare className="mr-3 h-6 w-6" />
-        Live Chat with Experts
-      </Button>
+      <div className="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <Breadcrumb />
+      </div>
+      <div className="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-6">
+        <HeroSection />
+        <DetailsSection />
+        <DocumentsSection />
+      </div>
     </>
   );
 };

@@ -103,11 +103,11 @@ import RegisteredOfficeChangeCompany from "./pages/RegisteredOfficeChangeCompany
 import DINEkycFiling from "./pages/DINEkycFiling";
 import DINReactivation from "./pages/DINReactivation";
 import DirectorChange from "./pages/DirectorChange";
-// import RemoveDirector from "./pages/RemoveDirector";
-// import Adt1Filing from "./pages/Adt1Filing";
+import RemoveDirector from "./pages/RemoveDirector";
+import ADT1Filing from "./pages/ADT1Filing";
 import DPT3Filing from "./pages/DPT3Filing";
 import LLPForm11Filing from "./pages/LLPForm11Filing";
-// import DormantStatusFiling from "./pages/DormantStatusFiling";
+import DormantStatusFiling from "./pages/DormantStatusFiling";
 import MOAAmendment from "./pages/MOAAmendment";
 import AOAAmendment from "./pages/AOAAmendment";
 import AuthorizedCapitalIncrease from "./pages/AuthorizedCapitalIncrease";
@@ -247,11 +247,11 @@ function App() {
               <Route path="/din-ekyc-filing" element={<Layout><DINEkycFiling /></Layout>} />
               <Route path="/din-reactivation" element={<Layout><DINReactivation /></Layout>} />
               <Route path="/director-change" element={<Layout><DirectorChange /></Layout>} />
-              {/* <Route path="/remove-director" element={<RemoveDirector />} /> */}
-              {/* <Route path="/adt1-filing" element={<Adt1Filing />} /> */}
+              <Route path="/remove-director" element={<Layout><RemoveDirector /></Layout>} />
+              <Route path="/adt-1-filing" element={<Layout><ADT1Filing /></Layout>} />
               <Route path="/dpt3-filing" element={<Layout><DPT3Filing /></Layout>} />
               <Route path="/llp-form11-filing" element={<Layout><LLPForm11Filing /></Layout>} />
-              {/* <Route path="/dormant-status-filing" element={<DormantStatusFiling />} /> */}
+              <Route path="/dormant-status-filing" element={<Layout><DormantStatusFiling /></Layout>} />
               <Route path="/moa-amendment" element={<Layout><MOAAmendment /></Layout>} />
               <Route path="/aoa-amendment" element={<Layout><AOAAmendment /></Layout>} />
               <Route path="/authorized-capital-increase" element={<Layout><AuthorizedCapitalIncrease /></Layout>} />
