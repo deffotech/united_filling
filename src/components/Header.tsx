@@ -1085,7 +1085,7 @@ const Header = () => {
                             Remove Director
                           </Link>
                           <Link
-                            to="/adt1-filing"
+                            to="/adt-1-filing"
                             className="text-gray-600 hover:text-green-600"
                           >
                             ADT-1 Filing
