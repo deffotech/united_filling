@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
+
 
 const HeroSection = () => {
   const [showMoreDocs, setShowMoreDocs] = useState(false);
@@ -44,11 +46,9 @@ const HeroSection = () => {
           <div className="md:col-span-2 space-y-4">
             <h1 className="text-3xl font-bold">Import Export Code</h1>
             <div className="flex items-center space-x-1 text-yellow-500">
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} fill="currentColor" className="w-5 h-5" />
+              ))}
               <a
                 href="#"
                 className="text-blue-600 hover:underline text-sm ml-2"
@@ -87,12 +87,22 @@ const HeroSection = () => {
                       Import Export Certificate
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="IE Code Registration"
+                      serviceName="IE Code Registration"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="IE Code Registration"
+                      serviceName="IE Code Registration"
+                      price={2999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -127,12 +137,22 @@ const HeroSection = () => {
                       Class 3 Encrypted DSC
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="IE Code + ICEGATE + DSC"
+                      serviceName="IE Code + ICEGATE + DSC"
+                      price={4999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹4,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="IE Code + ICEGATE + DSC"
+                      serviceName="IE Code + ICEGATE + DSC"
+                      price={4999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>

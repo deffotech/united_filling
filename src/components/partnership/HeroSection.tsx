@@ -1,44 +1,36 @@
 import { Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
 
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 const HeroSection = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         <div className="md:col-span-4">
-          <div className="bg-blue-600 rounded-lg text-white overflow-hidden">
-            <div className="p-6">
-              <h2 className="text-2xl font-bold">PARTNERSHIP</h2>
-              <h2 className="text-2xl font-bold mb-4">REGISTRATION</h2>
-              <div className="bg-white text-blue-600 text-center py-2 rounded">
-                Partnership Deed & Stamp Paper
-              </div>
-            </div>
+          <div className="relative">
             <img
               src="assets/partnership-registration.jpg"
               alt="Partnership"
-              className="w-full h-48 object-cover"
+              className="rounded-lg w-full h-auto object-cover"
             />
-            <div className="p-6 text-sm">
-              <p>Pan Card</p>
-              <p>Aadhar Card</p>
-              <p>Rental Agreement</p>
-              <a href="#" className="font-semibold mt-2 inline-block">
-                Load More
-              </a>
+            <div className="absolute top-0 left-0 bg-blue-900 bg-opacity-70 text-white p-4 rounded-tl-lg w-full">
+              <h3 className="font-bold text-lg leading-tight">PARTNERSHIP REGISTRATION</h3>
+              <p className="text-xs mt-1">Partnership Deed & Stamp Paper</p>
             </div>
+          </div>
+          <div className="mt-4 text-sm">
+            <p className="font-medium">Pan Card</p>
+            <p className="font-medium mt-1">Aadhar Card</p>
+            <p className="font-medium mt-1">Rental Agreement</p>
+            <a href="#" className="text-blue-600 hover:underline mt-1 inline-block">
+              Load More
+            </a>
           </div>
         </div>
         <div className="md:col-span-8">
-          <h1 className="text-2xl font-bold text-gray-800">
+          <h1 className="text-3xl font-bold text-gray-800">
             Partnership Firm Registration
           </h1>
           <div className="flex items-center my-2">
@@ -58,21 +50,9 @@ const HeroSection = () => {
             client scope.
           </p>
 
-          <Select>
-            <SelectTrigger className="w-full">
-              <SelectValue placeholder="Andaman and Nicobar Islands" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="andaman">
-                Andaman and Nicobar Islands
-              </SelectItem>
-              <SelectItem value="arunachal">Arunachal Pradesh</SelectItem>
-            </SelectContent>
-          </Select>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-            <Card className="border-green-200">
-              <CardContent className="p-4">
+            <Card className="border-green-200 h-full">
+              <CardContent className="p-4 flex flex-col h-full">
                 <div className="text-xs font-bold text-green-600 mb-2">
                   2 Exclusive Offers
                 </div>
@@ -103,13 +83,26 @@ const HeroSection = () => {
                     LEDGERS Software - 1 Year
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white border border-green-500 text-green-500 hover:bg-green-50">
-                  ADD
-                </Button>
+               <div className="flex gap-2 mt-auto pt-4">
+                  <AddToCartButton
+                    serviceId="Andaman and Nicobar Islands"
+                    serviceName="Andaman and Nicobar Islands"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Andaman and Nicobar Islands"
+                    serviceName="Andaman and Nicobar Islands"
+                    price={2999}
+                  />
+                </div>
               </CardContent>
             </Card>
-            <Card className="border-green-200">
-              <CardContent className="p-4">
+            <Card className="border-green-200 h-full">
+              <CardContent className="p-4 flex flex-col h-full">
                 <div className="text-xs font-bold text-green-600 mb-2">
                   2 Exclusive Offers
                 </div>
@@ -139,10 +132,23 @@ const HeroSection = () => {
                     <ChevronRight className="h-4 w-4 mt-0.5 text-green-500 mr-2 flex-shrink-0" />
                     LEDGERS Software - 1 Year
                   </li>
-                </ul>
-                <Button className="w-full mt-4 bg-white border border-green-500 text-green-500 hover:bg-green-50">
-                  ADD
-                </Button>
+               </ul>
+                <div className="flex gap-2 mt-auto pt-4">
+                  <AddToCartButton
+                    serviceId="Arunachal Pradesh"
+                    serviceName="Arunachal Pradesh"
+                    price={4999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹4,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Arunachal Pradesh"
+                    serviceName="Arunachal Pradesh"
+                    price={4999}
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>

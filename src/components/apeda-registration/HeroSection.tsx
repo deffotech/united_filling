@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -19,19 +20,19 @@ const HeroSection = () => {
               APEDA Registration
             </h1>
             <div className="flex items-center mt-2">
-              <div className="flex text-yellow-400">
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 text-gray-300" />
-              </div>
+              {[...Array(4)].map((_, i) => (
+                <Star
+                  key={i}
+                  className="h-5 w-5 text-yellow-400 fill-yellow-400"
+                />
+              ))}
+              <Star className="h-5 w-5 text-gray-300" />
               <span className="ml-2 text-gray-600">(67)</span>
             </div>
             <p className="mt-4 text-gray-600">
               APEDA Registration is essential for exporters of agricultural and
               processed food products. Simplify the registration process and
-              receive your RCMC certificate quickly with CA PI.
+              receive your RCMC certificate quickly with United Filings.
             </p>
 
             <div className="border rounded-lg p-4 mt-6 relative border-dashed border-green-500">
@@ -57,12 +58,22 @@ const HeroSection = () => {
                   RCMC Certificate
                 </li>
               </ul>
-              <Button
-                variant="outline"
-                className="mt-4 w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-              >
-                ADD
-              </Button>
+              <div className="flex gap-2 mt-4">
+                <AddToCartButton
+                  serviceId="APEDA Registration"
+                  serviceName="APEDA Registration"
+                  price={5999}
+                  className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹5,999
+                </AddToCartButton>
+                <AddToWishlistButton
+                  serviceId="APEDA Registration"
+                  serviceName="APEDA Registration"
+                  price={5999}
+                />
+              </div>
             </div>
 
             <div className="flex justify-between mt-6 text-sm">

@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronDown, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
+
 
 const HeroSection = () => {
   return (
@@ -22,10 +24,9 @@ const HeroSection = () => {
           <div className="md:col-span-2 space-y-4">
             <h1 className="text-3xl font-bold">ICEGATE Registration</h1>
             <div className="flex items-center space-x-2 text-yellow-500">
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
+              {[...Array(4)].map((_, i) => (
+                <Star key={i} fill="currentColor" className="w-5 h-5" />
+              ))}
               <Star className="w-5 h-5 text-gray-300" />
               <a href="#" className="text-blue-600 hover:underline text-sm">
                 (32)
@@ -38,10 +39,7 @@ const HeroSection = () => {
               holders), IEC holders (and IEC authorised persons), Shipping
               Lines, Shipping agents, Airlines, Air Agents, Console Agents etc.
             </p>
-            <div className="border rounded-md p-3 flex justify-between items-center">
-              <span>ICEGATE Registration</span>
-              <ChevronDown className="w-5 h-5" />
-            </div>
+          
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <Card className="border-dashed border-green-500">
@@ -64,12 +62,22 @@ const HeroSection = () => {
                       ICEGATE Registration Number
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="ICEGATE Registration"
+                      serviceName="ICEGATE Registration"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="ICEGATE Registration"
+                      serviceName="ICEGATE Registration"
+                      price={2999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -96,12 +104,22 @@ const HeroSection = () => {
                       Class 3 Encrypted DSC
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="ICEGATE Registration + DSC"
+                      serviceName="ICEGATE Registration + DSC"
+                      price={4999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹4,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="ICEGATE Registration + DSC"
+                      serviceName="ICEGATE Registration + DSC"
+                      price={4999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>

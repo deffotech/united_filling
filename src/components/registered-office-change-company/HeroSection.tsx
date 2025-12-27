@@ -15,13 +15,9 @@ const HeroSection = () => {
         <div className="p-1">
           <h1 className="text-3xl font-bold text-gray-800">Registered Office Change - Company</h1>
           <div className="flex items-center my-2">
-            <div className="flex text-yellow-400">
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-            </div>
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} fill="currentColor" className="w-5 h-5 text-yellow-400" />
+            ))}
             <span className="text-gray-600 ml-2">(153)</span>
           </div>
           <p className="text-gray-600 mt-4 mb-6">
@@ -36,9 +32,7 @@ const HeroSection = () => {
                 <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Application Filing in MCA</li>
                 <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Updated MCA Master data copy</li>
               </ul>
-              <button className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50">
-                ADD
-              </button>
+            
             </div>
 
             <div className="border rounded-lg p-4 bg-gray-50 relative pt-8">
@@ -48,9 +42,7 @@ const HeroSection = () => {
                 <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Application Filing in MCA</li>
                 <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Updated MCA Master data copy</li>
               </ul>
-              <button className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50">
-                ADD
-              </button>
+             
             </div>
           </div>
 

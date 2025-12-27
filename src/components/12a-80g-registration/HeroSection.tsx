@@ -1,12 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 import { Star, ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
@@ -32,22 +26,11 @@ const HeroSection = () => {
             <span className="ml-2 text-sm text-gray-600">(5)</span>
           </div>
           <p className="text-gray-600 mb-4">
-            Obtain 12A registration effortlessly with CA PI to get tax-exemption
+            Obtain 12A registration effortlessly with United Filings to get tax-exemption
             for your charitable organization and get 80G registration for your
-            charitable organization with CA PI and allow donors to claim tax
+            charitable organization with United Filings and allow donors to claim tax
             deductions.
           </p>
-          <Select defaultValue="12a">
-            <SelectTrigger className="w-full md:w-2/3">
-              <SelectValue placeholder="Select Registration" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="12a">12A Registration</SelectItem>
-              <SelectItem value="80g">80G Registration</SelectItem>
-              <SelectItem value="both">12A and 80G Registration</SelectItem>
-            </SelectContent>
-          </Select>
-
           <div className="grid md:grid-cols-2 gap-6 mt-6">
             <Card className="border-green-200">
               <CardContent className="p-4">
@@ -73,9 +56,22 @@ const HeroSection = () => {
                     12A Certificate
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="12A Registration"
+                    serviceName="12A Registration"
+                    price={15999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹15,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="12A Registration"
+                    serviceName="12A Registration"
+                    price={15999}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="border-green-200">
@@ -102,9 +98,22 @@ const HeroSection = () => {
                     80G Certificate
                   </li>
                 </ul>
-                <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="80G Registration"
+                    serviceName="80G Registration"
+                    price={15999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹15,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="80G Registration"
+                    serviceName="80G Registration"
+                    price={15999}
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>

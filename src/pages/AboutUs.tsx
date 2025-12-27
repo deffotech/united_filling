@@ -1,16 +1,15 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
 import { Users, Target, Award, Globe } from "lucide-react";
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen">
-      <Header />
+      
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">About CA PI</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">About United Filings</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Your trusted partner in business compliance and registration
             services across India
@@ -91,7 +90,7 @@ const AboutUs = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Story</h2>
             <div className="text-lg text-gray-600 leading-relaxed space-y-6">
               <p>
-                Founded in 2014, CA PI started with a simple mission: to make
+                Founded in 2014, United Filings started with a simple mission: to make
                 business registration and compliance accessible to every
                 entrepreneur in India. What began as a small team of legal and
                 technology experts has grown into one of India's leading
@@ -152,8 +151,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

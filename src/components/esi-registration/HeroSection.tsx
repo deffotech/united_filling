@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight, CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,7 @@ const HeroSection = () => {
               <div className="z-10 relative">
                 <h2 className="text-2xl font-bold">ESI REGISTRATION</h2>
                 <p className="mt-2 text-sm border-t border-b py-1">
-                  Online ESI Registration - Expert Support - CA PI
+                  Online ESI Registration - Expert Support - United Filings
                 </p>
               </div>
             </div>
@@ -71,12 +72,22 @@ const HeroSection = () => {
                     ESI Number
                   </li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="ESI Registration"
+                    serviceName="ESI Registration"
+                    price={3999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹3,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="ESI Registration"
+                    serviceName="ESI Registration"
+                    price={3999}
+                  />
+                </div>
               </CardContent>
             </Card>
 

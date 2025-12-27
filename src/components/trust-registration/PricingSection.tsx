@@ -1,29 +1,9 @@
-
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
-import { Button } from "@/components/ui/button"
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const PricingSection = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-      <div className="w-full md:w-1/3 mb-6">
-        <Select defaultValue="bengaluru">
-          <SelectTrigger className="w-full">
-            <SelectValue placeholder="Select City" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="bengaluru">Bengaluru</SelectItem>
-            <SelectItem value="mumbai">Mumbai</SelectItem>
-            <SelectItem value="delhi">Delhi</SelectItem>
-            <SelectItem value="chennai">Chennai</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="border border-dashed border-gray-300 rounded-lg p-4">
@@ -36,7 +16,22 @@ const PricingSection = () => {
             <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> INR 500 Stamp Paper</li>
             <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> Trust PAN Card</li>
           </ul>
-          <Button className="w-full bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
+         <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Chennai Trade License"
+                    serviceName="Chennai"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Chennai Trade License"
+                    serviceName="Chennai"
+                    price={2999}
+                  />
+                </div>
         </div>
 
         <div className="border border-dashed border-gray-300 rounded-lg p-4">
@@ -49,8 +44,23 @@ const PricingSection = () => {
             <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> INR 500 Stamp Paper</li>
             <li className="flex items-center"><span className="text-green-500 mr-2">&gt;</span> Trust PAN Card</li>
           </ul>
-          <Button className="w-full bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
-        </div>
+        <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Chennai Trade License"
+                    serviceName="Chennai"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Chennai Trade License"
+                    serviceName="Chennai"
+                    price={2999}
+                  />
+                </div>
+                </div>
       </div>
       <div className="flex justify-between text-sm text-blue-600 mt-4">
         <a href="#" className="hover:underline">Terms and conditions</a>

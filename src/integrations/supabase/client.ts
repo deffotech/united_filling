@@ -2,10 +2,12 @@
 import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 
-const SUPABASE_URL = "https://flpejsholttqsphleids.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZscGVqc2hvbHR0cXNwaGxlaWRzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5NTg0MTcsImV4cCI6MjA2NTUzNDQxN30.fEW-uTqoaVl342A_Vr09NyhqOuQEQzezhS53xhnZLyo";
+const url = import.meta.env.VITE_SUPABASE_URL as string | undefined;
+const anon = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
 
-// Import the supabase client like this:
-// import { supabase } from "@/integrations/supabase/client";
+if (!url || !anon) {
+  // fail fast in dev so missing env is obvious
+  throw new Error('Missing VITE_SUPABASE_URL or VITE_SUPABASE_ANON_KEY in environment');
+}
 
-export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+export const supabase = createClient<Database>(url, anon);

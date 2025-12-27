@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,11 +7,10 @@ import { Link } from "react-router-dom";
 const DirectorChange = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
       <main className="container mx-auto px-4 py-8">
         <nav className="flex items-center space-x-1 text-sm text-gray-600 mb-6">
           <Link to="/" className="hover:text-green-600">
-            CA PI
+            United Filings
           </Link>
           <ChevronRight className="h-4 w-4" />
           <Link to="/company-compliance" className="hover:text-green-600">
@@ -22,7 +20,7 @@ const DirectorChange = () => {
           <span className="text-gray-900">Director Change</span>
         </nav>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className=" gap-8">
           <div className="lg:col-span-2">
             <Card className="mb-8">
               <CardHeader>
@@ -108,8 +106,7 @@ const DirectorChange = () => {
             </Card>
           </div>
         </div>
-      </main>
-      <Footer />
+  </main>
     </div>
   );
 };

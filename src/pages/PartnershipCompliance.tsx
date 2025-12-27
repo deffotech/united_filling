@@ -11,12 +11,10 @@ import {
   Shield,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import Sidebar from "@/components/itr1-return-filing/Sidebar";
 
 const PartnershipCompliance = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
-      <Header />
       <main className="px-4 py-8 md:px-8 lg:px-16">
         <nav className="flex mb-8" aria-label="Breadcrumb">
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -25,7 +23,7 @@ const PartnershipCompliance = () => {
                 to="/"
                 className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600"
               >
-                CA PI
+                United Filings
               </Link>
             </li>
             <li>
@@ -139,7 +137,7 @@ const PartnershipCompliance = () => {
             </Card>
           </div>
           <div className="lg:col-span-1">
-            <Sidebar />
+            
           </div>
         </div>
       </main>

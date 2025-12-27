@@ -1,13 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
+
 
 const HeroSection = () => {
   return (
@@ -50,20 +46,9 @@ const HeroSection = () => {
             <p className="text-gray-600">
               LEI Code is required for companies involved in global financial
               transactions. Get your Legal Entity Identifier Code quickly and
-              easily with CA PI.
+              easily with United Filings.
             </p>
-
-            <Select defaultValue="1">
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Select Year" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="1">1 Year</SelectItem>
-                <SelectItem value="3">3 Years</SelectItem>
-                <SelectItem value="5">5 Years</SelectItem>
-              </SelectContent>
-            </Select>
-
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <Card className="border-dashed border-green-500">
                 <CardContent className="p-4 space-y-3">
@@ -89,12 +74,22 @@ const HeroSection = () => {
                       LEI Number
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="LEI 1 Year"
+                      serviceName="1 Year"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="LEI 1 Year"
+                      serviceName="1 Year"
+                      price={2999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
               <Card className="border-dashed border-green-500">
@@ -121,12 +116,22 @@ const HeroSection = () => {
                       LEI Number
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="LEI 3 Years"
+                      serviceName="3 Years"
+                      price={4999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹4,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="LEI 3 Years"
+                      serviceName="3 Years"
+                      price={4999}
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>

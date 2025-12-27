@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,11 +7,11 @@ import { Link } from "react-router-dom";
 const AuthorizedCapitalIncrease = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+    
       <main className="container mx-auto px-4 py-8">
         <nav className="flex items-center space-x-1 text-sm text-gray-600 mb-6">
           <Link to="/" className="hover:text-green-600">
-            CA PI
+            United Filings
           </Link>
           <ChevronRight className="h-4 w-4" />
           <Link to="/company-compliance" className="hover:text-green-600">
@@ -22,7 +21,7 @@ const AuthorizedCapitalIncrease = () => {
           <span className="text-gray-900">Authorized Capital Increase</span>
         </nav>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="gap-8">
           <div className="lg:col-span-2">
             <Card className="mb-8">
               <CardHeader>
@@ -84,28 +83,10 @@ const AuthorizedCapitalIncrease = () => {
           </div>
 
           <div className="lg:col-span-1">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg text-green-600">
-                  Get Started
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-2">
-                    <Clock className="h-4 w-4 text-green-600" />
-                    <span className="text-sm">Processing Time: 20-30 days</span>
-                  </div>
-                  <Button className="w-full bg-green-600 hover:bg-green-700">
-                    Start Capital Increase
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </main>
-      <Footer />
+    
     </div>
   );
 };

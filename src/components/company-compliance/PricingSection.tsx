@@ -1,5 +1,7 @@
 
 import { ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const PricingSection = () => {
   return (
@@ -16,9 +18,22 @@ const PricingSection = () => {
             <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> Commencement of Business</li>
             <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> LEDGERS Accounting Software</li>
           </ul>
-          <button className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50">
-            ADD
-          </button>
+          <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Company Basic-company compliance"
+                      serviceName="Company Basic"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Company Basic-company compliance"
+                      serviceName="Company Basic"
+                      price={2999}
+                    />
+                  </div>
         </div>
         <div className="border rounded-lg p-6">
           <div className="bg-green-100 text-green-700 text-xs font-bold inline-block px-3 py-1 rounded-full mb-4">2 Exclusive Offers</div>
@@ -26,9 +41,22 @@ const PricingSection = () => {
           <ul className="space-y-2 text-gray-600">
             <li className="flex items-start"><ChevronRight className="w-4 h-4 mr-2 mt-1 text-gray-400 flex-shrink-0" /> TDS filings for all quarters</li>
           </ul>
-          <button className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50">
-            ADD
-          </button>
+          <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="TDS Filings 2 year"
+                      serviceName="TDS Filings 2 year"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="TDS Filings 2 year"
+                      serviceName="TDS Filings 2 year"
+                      price={2999}
+                    />
+                  </div>
         </div>
       </div>
       <div className="flex justify-between items-center mt-4 text-blue-600 border-b pb-4">

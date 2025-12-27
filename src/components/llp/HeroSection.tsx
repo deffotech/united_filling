@@ -1,13 +1,8 @@
 
 import { Star, CheckCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
+
 
 const HeroSection = () => {
   return (
@@ -48,18 +43,6 @@ const HeroSection = () => {
             </div>
             <span className="text-gray-600 ml-2 text-sm font-medium">(2638)</span>
           </div>
-
-          <div className="mt-4">
-            <Select defaultValue="instant">
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Instant Name Application for LLP" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="instant">Instant Name Application for LLP</SelectItem>
-                <SelectItem value="normal">Normal Name Application for LLP</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
             <div className="border-2 border-dashed border-yellow-400 rounded-lg p-4 relative pt-6">
@@ -70,7 +53,22 @@ const HeroSection = () => {
                 <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" /> Instant Filing</li>
                 <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" /> 4 Name Choice</li>
               </ul>
-              <Button className="w-full mt-4 bg-green-500 hover:bg-green-600">ADD</Button>
+              <div className="flex gap-2 mt-4">
+                <AddToCartButton
+                  serviceId="MCA Name Approval"
+                  serviceName="MCA Name Approval"
+                  price={2999}
+                  className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹2,999
+                </AddToCartButton>
+                <AddToWishlistButton
+                  serviceId="MCA Name Approval"
+                  serviceName="MCA Name Approval"
+                  price={2999}
+                />
+              </div>
             </div>
             <div className="border-2 border-dashed border-yellow-400 rounded-lg p-4 relative pt-6">
               <span className="absolute top-0 -translate-y-1/2 left-4 bg-white px-2 text-xs font-semibold text-yellow-500">2 Exclusive Offers</span>
@@ -85,7 +83,22 @@ const HeroSection = () => {
                 <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" /> D&C Downloading & Shipping Support</li>
                 <li className="flex items-start"><CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-0.5 shrink-0" /> Bank Account Opening Assistance</li>
               </ul>
-              <Button className="w-full mt-4 bg-green-500 hover:bg-green-600">ADD</Button>
+              <div className="flex gap-2 mt-4">
+                <AddToCartButton
+                  serviceId="Andaman and Nicobar Islands"
+                  serviceName="Andaman and Nicobar Islands"
+                  price={4999}
+                  className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹4,999
+                </AddToCartButton>
+                <AddToWishlistButton
+                  serviceId="Andaman and Nicobar Islands"
+                  serviceName="Andaman and Nicobar Islands"
+                  price={4999}
+                />
+              </div>
             </div>
           </div>
           <div className="flex justify-between items-center mt-4 text-sm">

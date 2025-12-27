@@ -1,13 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ChevronRight, CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -20,7 +14,7 @@ const HeroSection = () => {
                 <h2 className="text-2xl font-bold">ISO Certification</h2>
                 <p className="mt-2 text-lg">Digital & Hassle-Free</p>
                 <p className="mt-4 text-sm font-light">
-                  Let CA PI simplify your ISO certification process.
+                  Let United Filings simplify your ISO certification process.
                 </p>
               </div>
               <img
@@ -54,20 +48,6 @@ const HeroSection = () => {
               global standards of quality assurance, manufacturing and business.
             </p>
 
-            <Select defaultValue="non-audited">
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Select Certification Type" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="non-audited">
-                  Non-Audited - ISO 9001:2018
-                </SelectItem>
-                <SelectItem value="audited">
-                  Audited - ISO 14001:2018
-                </SelectItem>
-              </SelectContent>
-            </Select>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <Card className="border-dashed border-green-500">
                 <CardContent className="p-4 space-y-3">
@@ -95,17 +75,32 @@ const HeroSection = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />
+
                       100% Refund Guarantee
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Non - Audited - ISO 9001:2018"
+                      serviceName="Non - Audited - ISO 9001:2018"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Non - Audited - ISO 9001:2018"
+                      serviceName="Non - Audited - ISO 9001:2018"
+                      price={2999}
+                    />
+                  </div>
+                 
+                 
                 </CardContent>
+
               </Card>
+             
               <Card className="border-dashed border-green-500">
                 <CardContent className="p-4 space-y-3">
                   <div className="text-xs font-semibold bg-green-100 text-green-700 px-2 py-1 rounded-full inline-flex items-center">
@@ -132,16 +127,29 @@ const HeroSection = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight className="w-4 h-4 mr-1 text-green-500 flex-shrink-0" />
+
                       100% Refund Guarantee
                     </li>
                   </ul>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                  >
-                    ADD
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Audited - ISO 14001:2018"
+                      serviceName="Audited - ISO 14001:2018"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Audited - ISO 14001:2018"
+                      serviceName="Audited - ISO 14001:2018"
+                      price={2999}
+                    />
+                  </div>
+                
                 </CardContent>
+
               </Card>
             </div>
             <div className="flex justify-between text-sm text-blue-600 mt-4">

@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
@@ -9,7 +10,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-12 gap-0">
           <div className="md:col-span-4">
             <img
-              src="/lovable-uploads/8892b4d6-7b9e-4f9c-a358-2a4158a0603d.png"
+              src="/assets/logo.png"
               alt="BIS Registration"
               className="h-full w-full object-cover"
             />
@@ -19,23 +20,22 @@ const HeroSection = () => {
               BIS Registration
             </h1>
             <div className="flex items-center mt-2">
-              <div className="flex text-yellow-400">
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-                <Star className="h-5 w-5 fill-current" />
-              </div>
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className="h-5 w-5 text-yellow-400 fill-yellow-400"
+                />
+              ))}
               <span className="ml-2 text-gray-600">(5)</span>
             </div>
             <p className="mt-4 text-gray-600">
-              Get BIS Certification with CA PI to ensure your products meet
+              Get BIS Certification with United Filings to ensure your products meet
               Indian safety and quality standards.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="border rounded-lg p-4 relative">
                 <img
-                  src="/lovable-uploads/b82916f3-a462-4bfc-ac5e-a5da577d3e2a.png"
+                  src="/assets/logo.png"
                   alt="Assured by Ledgers"
                   className="h-6 absolute top-2 right-2"
                 />
@@ -58,12 +58,22 @@ const HeroSection = () => {
                     100% Refund Guarantee
                   </li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="mt-4 w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="BIS Consultation"
+                    serviceName="BIS Consultation"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="BIS Consultation"
+                    serviceName="BIS Consultation"
+                    price={2999}
+                  />
+                </div>
               </div>
               <div className="border rounded-lg p-4 relative">
                 <div className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full absolute top-2 right-2">
@@ -88,12 +98,22 @@ const HeroSection = () => {
                     BIS Certification
                   </li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="mt-4 w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="BIS Certification"
+                    serviceName="BIS Certification"
+                    price={25000}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹25,000
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="BIS Certification"
+                    serviceName="BIS Certification"
+                    price={25000}
+                  />
+                </div>
               </div>
             </div>
             <div className="flex justify-between mt-6 text-sm">

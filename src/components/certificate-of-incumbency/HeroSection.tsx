@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Star, ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
+
 
 const HeroSection = () => {
   return (
@@ -16,17 +18,16 @@ const HeroSection = () => {
         <div className="md:col-span-7 p-8">
           <h1 className="text-3xl font-bold">Certificate of Incumbency</h1>
           <div className="flex items-center my-2">
-            <div className="flex text-yellow-400">
-              <Star className="h-5 w-5 fill-current" />
-              <Star className="h-5 w-5 fill-current" />
-              <Star className="h-5 w-5 fill-current" />
-              <Star className="h-5 w-5 fill-current" />
-              <Star className="h-5 w-5 fill-current" />
-            </div>
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className="h-5 w-5 text-yellow-400 fill-yellow-400"
+              />
+            ))}
             <span className="ml-2 text-sm text-gray-600">(5)</span>
           </div>
           <p className="text-gray-600 mb-4">
-            Get your Incumbency Certificate with CA PI- verify your key
+            Get your Incumbency Certificate with United Filings- verify your key
             officers' authority easily.
           </p>
 
@@ -50,9 +51,22 @@ const HeroSection = () => {
                   Delivery of Certificate
                 </li>
               </ul>
-              <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">
-                ADD
-              </Button>
+              <div className="flex gap-2 mt-4">
+                <AddToCartButton
+                  serviceId="Certificate of Incumbency"
+                  serviceName="Certificate of Incumbency"
+                  price={4999}
+                  className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                  variant="outline"
+                >
+                  ADD TO CART - ₹4,999
+                </AddToCartButton>
+                <AddToWishlistButton
+                  serviceId="Certificate of Incumbency"
+                  serviceName="Certificate of Incumbency"
+                  price={4999}
+                />
+              </div>
             </CardContent>
           </Card>
 

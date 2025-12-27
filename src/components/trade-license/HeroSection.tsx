@@ -1,12 +1,7 @@
-import { Button } from "@/components/ui/button";
+
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 import { Star, ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
@@ -50,18 +45,6 @@ const HeroSection = () => {
             Trade license is mandatory for businesses operating in a commercial
             property. Easily apply for Trade License online using IndiaFilings.
           </p>
-          <div className="mt-6">
-            <Select defaultValue="chennai">
-              <SelectTrigger className="w-full md:w-1/2">
-                <SelectValue placeholder="Select City" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="chennai">Chennai</SelectItem>
-                <SelectItem value="telangana">Telangana</SelectItem>
-                <SelectItem value="mumbai">Mumbai</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <Card className="border-dashed border-green-500">
@@ -91,12 +74,22 @@ const HeroSection = () => {
                     Year Trade License
                   </li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Chennai Trade License"
+                    serviceName="Chennai"
+                    price={2999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹2,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Chennai Trade License"
+                    serviceName="Chennai"
+                    price={2999}
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="border-dashed border-green-500">
@@ -126,12 +119,22 @@ const HeroSection = () => {
                     Year Trade License
                   </li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="mt-6 w-full text-green-500 border-green-500 hover:bg-green-50 hover:text-green-600"
-                >
-                  ADD
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <AddToCartButton
+                    serviceId="Telangana Trade License"
+                    serviceName="Telangana"
+                    price={4999}
+                    className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                    variant="outline"
+                  >
+                    ADD TO CART - ₹4,999
+                  </AddToCartButton>
+                  <AddToWishlistButton
+                    serviceId="Telangana Trade License"
+                    serviceName="Telangana"
+                    price={4999}
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>

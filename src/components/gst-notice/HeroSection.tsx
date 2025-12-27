@@ -1,6 +1,7 @@
 
 import { Star, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
     return (
@@ -29,7 +30,7 @@ const HeroSection = () => {
                         Consult an Experienced Professional on tax matters.
                     </p>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                    <div className="flex gap-4 mt-6">
                         <div className="border rounded-lg p-4 shadow-sm bg-stone-50 border-dashed border-orange-400">
                             <span className="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">2 Exclusive Offers</span>
                             <h3 className="text-md font-bold mt-2">30 Minutes - Tax Consultation</h3>
@@ -41,7 +42,22 @@ const HeroSection = () => {
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Corporate Financial Consultation</span></li>
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Consultation report - Financial</span></li>
                             </ul>
-                            <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
+                            <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="30 Minutes - Tax Consultation"
+                      serviceName="30 Minutes - Tax Consultation"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="30 Minutes - Tax Consultation"
+                      serviceName="30 Minutes - Tax Consultation"
+                      price={2999}
+                    />
+                  </div>
                         </div>
                         <div className="border rounded-lg p-4 shadow-sm bg-stone-50 border-dashed border-orange-400">
                             <span className="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">2 Exclusive Offers</span>
@@ -50,7 +66,22 @@ const HeroSection = () => {
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Reply to SCN</span></li>
                                 <li className="flex items-start"><ChevronRight className="h-4 w-4 text-green-500 mr-2 flex-shrink-0 mt-1" /> <span>Acknowledgement Copy</span></li>
                             </ul>
-                            <Button className="w-full mt-4 bg-white text-green-600 border border-green-600 hover:bg-green-50">ADD</Button>
+                             <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Response gst-notice"
+                      serviceName="Response gst-notice"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Response gst-notice"
+                      serviceName="Response gst-notice"
+                      price={2999}
+                    />
+                  </div>
                         </div>
                     </div>
                 </div>

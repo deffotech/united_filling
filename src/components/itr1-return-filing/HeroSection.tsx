@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
   Star,
@@ -16,7 +15,7 @@ const HeroSection = () => {
         <div className="bg-blue-600 p-8 text-white">
           <h1 className="text-3xl font-bold mb-4">File Income Tax Return</h1>
           <p className="text-blue-100 mb-6">
-            Save the year income tax assessment with CA PI. Get expert help with
+            Save the year income tax assessment with United Filings. Get expert help with
             Filing, tax planning, and compliance - all in one place.
           </p>
 
@@ -47,9 +46,7 @@ const HeroSection = () => {
                 <li>• Protected and Confidential</li>
               </ul>
             </div>
-            <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg">
-              File ITR
-            </Button>
+            
           </div>
         </div>
         <div className="p-8 bg-gradient-to-br from-blue-50 to-white">

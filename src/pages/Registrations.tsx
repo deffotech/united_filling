@@ -1,9 +1,7 @@
 
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/registrations/Breadcrumb';
 import HeroSection from '@/components/registrations/HeroSection';
-import OffersSection from '@/components/business-registration/OffersSection';
 import ServicesGrid from '@/components/registrations/ServicesGrid';
 import RightSidebar from '@/components/business-registration/RightSidebar';
 import LeftSidebarNav from '@/components/business-registration/LeftSidebarNav';
@@ -14,7 +12,6 @@ import { MessageSquare } from 'lucide-react';
 const Registrations = () => {
   return (
     <div className="bg-white min-h-screen">
-      <Header />
       <div className="bg-gray-50/50">
         <main className="max-w-screen-xl mx-auto px-4 py-6">
           <Breadcrumb />
@@ -24,7 +21,6 @@ const Registrations = () => {
             </aside>
             <div className="col-span-12 lg:col-span-7">
               <HeroSection />
-              <OffersSection />
               <ServicesGrid />
             </div>
             <aside className="col-span-12 lg:col-span-3">
@@ -33,8 +29,7 @@ const Registrations = () => {
           </div>
           <PopularSearches />
         </main>
-      </div>
-      <Footer />
+  </div>
       <Button className="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg h-16 w-auto px-6 text-lg z-50">
         <MessageSquare className="mr-3 h-6 w-6" />
         Live Chat with Experts

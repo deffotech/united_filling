@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Star } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -7,7 +8,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Star } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -39,7 +39,7 @@ const HeroSection = () => {
             <span className="text-sm text-gray-500 ml-2">(7854)</span>
           </div>
           <p className="text-sm text-gray-600 mt-2">
-            E-file your income tax return (ITR) online through CA PI quickly at
+            E-file your income tax return (ITR) online through United Filings quickly at
             an affordable price. Get free income tax support for ITR filing.
           </p>
 
@@ -99,7 +99,6 @@ const HeroSection = () => {
           </div>
 
           <div className="mt-4 space-y-2">
-            <h3 className="font-semibold">Offers and discounts</h3>
             <div className="flex items-center space-x-2">
               <span className="text-sm text-gray-500">
                 LEDGERS - Compliance Platform

@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 
+
 const HeroSection = () => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
@@ -37,7 +38,9 @@ const HeroSection = () => {
             The profits of such companies are utilized for promoting these
             objectives and are not distributed among the Company's members.
           </p>
+        
         </div>
+     
       </div>
     </div>
   );

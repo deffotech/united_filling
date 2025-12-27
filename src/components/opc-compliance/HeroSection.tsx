@@ -1,31 +1,29 @@
 import { Star, ChevronRight } from "lucide-react";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 
 const HeroSection = () => {
   return (
-    <section className="bg-white">
-      <div className="grid lg:grid-cols-2 gap-8 items-start">
-        <div>
+    <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="md:col-span-4">
           <img
             src="/lovable-uploads/af854e9e-0988-40fc-859b-9b0377969feb.png"
             alt="OPC Compliance"
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg w-full h-auto object-cover"
           />
         </div>
-        <div className="p-1">
+        <div className="md:col-span-8">
           <h1 className="text-3xl font-bold text-gray-800">OPC Compliance</h1>
           <div className="flex items-center my-2">
-            <div className="flex text-yellow-400">
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-              <Star fill="currentColor" className="w-5 h-5" />
-            </div>
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} fill="currentColor" className="w-5 h-5 text-yellow-400" />
+            ))}
             <span className="text-gray-600 ml-2">(525)</span>
           </div>
           <p className="text-gray-600 mt-4 mb-6">
             File your business tax returns and maintain compliance seamlessly
-            through CA PI.com. Get a Dedicated Accountant and LEDGERS compliance
+            through United Filings.com. Get a Dedicated Accountant and LEDGERS compliance
             platform for your business.
           </p>
 
@@ -60,9 +58,22 @@ const HeroSection = () => {
                 Commencement of Business
               </li>
             </ul>
-            <button className="mt-6 w-full bg-white border border-green-500 text-green-500 font-bold py-2 px-4 rounded-lg hover:bg-green-50">
-              ADD
-            </button>
+           <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="OPC Compliance-Basic"
+                      serviceName="OPC Compliance-Basic"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="OPC Compliance-Basic"
+                      serviceName="OPC Compliance-Basic"
+                      price={2999}
+                    />
+                  </div>
           </div>
 
           <div className="flex justify-between items-center mt-4 text-blue-600 border-b pb-4">
@@ -75,7 +86,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

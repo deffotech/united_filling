@@ -1,15 +1,8 @@
 import { Star, ChevronRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import AddToCartButton from "@/components/ui/AddToCartButton";
+import AddToWishlistButton from "@/components/ui/AddToWishlistButton";
 import { Link } from "react-router-dom";
-import OffersSection from "./OffersSection";
 
 const ConsultationCard = ({
   type,
@@ -32,13 +25,24 @@ const ConsultationCard = ({
               <span>{feature}</span>
             </li>
           ))}
+            <div className="flex gap-2 mt-4">
+                    <AddToCartButton
+                      serviceId="Non - Audited - ISO 9001:2018"
+                      serviceName="Non - Audited - ISO 9001:2018"
+                      price={2999}
+                      className="flex-1 bg-white text-green-600 border border-green-600 hover:bg-green-50"
+                      variant="outline"
+                    >
+                      ADD TO CART - ₹2,999
+                    </AddToCartButton>
+                    <AddToWishlistButton
+                      serviceId="Non - Audited - ISO 9001:2018"
+                      serviceName="Non - Audited - ISO 9001:2018"
+                      price={2999}
+                    />
+                  </div>
         </ul>
-        <Button
-          variant="outline"
-          className="mt-6 w-full border-green-500 text-green-500 hover:bg-green-50 hover:text-green-600 font-bold"
-        >
-          ADD
-        </Button>
+    
       </CardContent>
     </Card>
   );
@@ -78,25 +82,10 @@ const ConsultationView = () => {
               </div>
               <p className="mt-4 text-gray-600 text-sm">
                 Consult with top CAs, Lawyers, and business experts online,
-                anytime, anywhere with CA PI! Get expert guidance on accounting,
+                anytime, anywhere with United Filings! Get expert guidance on accounting,
                 tax, legal, business, intellectual property & much more to help
                 your business grow.
               </p>
-              <div className="mt-6">
-                <Select defaultValue="ca-consultation">
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select a consultation type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="ca-consultation">
-                      30 Minutes - CA Consultation
-                    </SelectItem>
-                    <SelectItem value="lawyer-consultation">
-                      30 Minutes - Lawyer Consultation
-                    </SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
             </div>
           </div>
         </CardContent>
@@ -136,7 +125,6 @@ const ConsultationView = () => {
         </Link>
       </div>
 
-      <OffersSection />
     </div>
   );
 };
